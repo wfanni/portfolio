@@ -5,7 +5,13 @@ export default function About() {
         <section className="h-screen py-24 flex flex-col justify-center items-center gap-12">
             <h2 className="text-[3rem] uppercase">About Me</h2>
             <div className="flex justify-center items-center gap-24">
-                <p className="w-1/3 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div className="w-2/5 text-justify flex flex-col gap-4">
+                    <p>Hey there! I'm Fanni, a passionate Frontend developer with a strong desire to delve into new challenges and learning opportunities. From the moment I dipped my toes into the world of coding, I knew I had found my calling in crafting beautiful and intuitive user interfaces.</p>
+                    <p>My motivation lies in the continuous pursuit of knowledge and personal growth. I love taking on new projects that allow me to expand my skills and explore new technologies. My goal is always to create captivating and functional user experiences that make a difference.</p>
+                    <p>I dream of the opportunity to live and work in an international setting, so I can honor my two main passions at once; Frontend Development and Travel. I love meeting new people and a I believe a good team is essential to success.</p>
+                    <p>I'm excited for what the future holds, and I'm ready to tackle any challenges that come my way! I'm always open to new opportunities, collaborations and to expand my skill set, so feel free to reach out to me to discuss how we can work together.</p>
+                    <p>Thanks for stopping by, and I look forward to connecting with you soon!</p>
+                </div>
                 <img className="w-1/4" src={me} alt="image-of-me"/>
             </div>
         </section>
