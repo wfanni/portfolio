@@ -6,6 +6,8 @@ export default {
     extend: {
       colors: {
         orange: '#ff5d30',
+        green: '#6EEB83',
+        dark: '#20063B',
       }
     },
   },

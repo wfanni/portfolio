@@ -1,7 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  color: #20063b;
+  background: linear-gradient(to bottom, #6eeb83, #c7f7cf 25%);
 }
+
+.contact {
+  background: linear-gradient(to top, #6eeb83, #c7f7cf 60%);
+}
+
+.about {
+  border-radius: 56% 44% 71% 29%/51% 52% 48% 48%;
+}
+
+.menu-item {
+  display: inline-block;
+  position: relative;
+  display: block;
+  margin: 0 2px;
+  padding: 0.5rem 1rem 0.3rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.menu-item:before {
+  transform: translateX(100%);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 99.5%;
+  height: 2px;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+.menu-item:after {
+  transform: translateX(-100%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99.5%;
+  height: 2px;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+.menu-item:hover {
+  color: #ff5d30;
+  text-decoration: none;
+}
+.menu-item:hover:before {
+  transition: 0.1s transform linear, 0.1s height linear 0.1s;
+  transform: translateX(0);
+  height: 100%;
+  border-color: #ff5d30;
+}
+.menu-item:hover:after {
+  transition: 0.1s transform linear 0.2s, 0.1s height linear 0.3s;
+  transform: translateX(0);
+  height: 100%;
+  border-color: #ff5d30;
+}/*# sourceMappingURL=index.css.map */
