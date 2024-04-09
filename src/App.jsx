@@ -1,4 +1,6 @@
 import Toolbar from './components/Toolbar';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './index.css'
 import Intro from './components/Intro';
 import About from './components/About';
@@ -39,7 +41,7 @@ export default function App() {
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
-      <button className={`backToTop fixed right-12 bottom-12 px-8 py-6 transition-all transition-200 rounded-full bg-white/50 text-orange ${scrollY >= 1000 ? 'opacity-100' : 'opacity-0'}`} type='button' onClick={backToTop} ><i className="text-5xl fa-solid fa-arrow-up"></i></button>
+      <button className={`backToTop fixed right-12 bottom-12 px-8 py-6 transition-all duration-200 rounded-full bg-white/50 text-orange ${scrollY >= 1000 ? 'opacity-100' : 'opacity-0'}`} type='button' onClick={backToTop} ><i className="text-5xl fa-solid fa-arrow-up"></i></button>
 
     </>
   )

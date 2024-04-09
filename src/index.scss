@@ -7,6 +7,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   color: #20063b;
   background: linear-gradient(to bottom, #6eeb83, #c7f7cf 25%);
+  overflow-x: hidden;
 }
 
 .contact {
@@ -68,5 +69,13 @@ body {
       height: 100%;
       border-color: #ff5d30;
     }
+  }
+}
+
+.slick-arrow {
+  &::before {
+    color: #ff5d30;
+    opacity: 1;
+    font-size: 2rem;
   }
 }
