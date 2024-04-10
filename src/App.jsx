@@ -41,7 +41,7 @@ export default function App() {
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
-      <button className={`backToTop fixed right-12 bottom-12 px-8 py-6 transition-all duration-200 rounded-full bg-white/50 text-orange ${scrollY >= 1000 ? 'opacity-100' : 'opacity-0'}`} type='button' onClick={backToTop} ><i className="text-5xl fa-solid fa-arrow-up"></i></button>
+      <button className={`backToTop fixed xs:right-6 sm:right-12 xs:bottom-6 sm:bottom-12 xs:px-6 sm:px-8 xs:py-4 sm:py-6 transition-all duration-200 rounded-full bg-white/50 text-orange ${scrollY >= 1000 ? 'opacity-100' : 'opacity-0'}`} type='button' onClick={backToTop} ><i className="xs:text-2xl sm:text-5xl fa-solid fa-arrow-up"></i></button>
 
     </>
   )
