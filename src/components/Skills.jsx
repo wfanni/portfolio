@@ -25,7 +25,7 @@ const Skills = forwardRef(function Skills({}, ref) {
   return (
     <section
       ref={ref}
-      className="min-h-screen h-fit flex flex-col justify-center items-center gap-12"
+      className="min-h-screen h-fit xs:pt-16 sm:pt-0 flex flex-col justify-center items-center gap-12"
     >
       <h2 className="text-[3rem] uppercase">Skills</h2>
       <div className="xs:w-4/5 sm:w-3/4 mx-auto flex justify-between items-center xs:flex-col sm:flex-row xs:gap-16 sm:gap-0">

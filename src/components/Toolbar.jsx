@@ -15,11 +15,11 @@ export default function Toolbar({ scrollPosition, sections }) {
         console.log(section.current);
     }
     return (
-        <ul className={`${scrollStyles} min-h-16 w-full z-10 fixed top-0 flex justify-center items-center gap-24 transition-all duration-200 bg-[#ffffff4d] hover:bg-[#ffffffeb]`}>
-            <li onClick={() => scrollToSection(sections.about)} className="cursor-pointer menu-item">About</li>
-            <li onClick={() => scrollToSection(sections.skills)} className="cursor-pointer menu-item">Skills</li>
-            <li onClick={() => scrollToSection(sections.projects)} className="cursor-pointer menu-item">Projects</li>
-            <li onClick={() => scrollToSection(sections.contact)} className="cursor-pointer menu-item">Contact</li>
+        <ul className={`${scrollStyles} min-h-16 w-full z-10 fixed top-0 flex justify-center items-center xs:gap-2 sm:gap-24 transition-all duration-200 bg-[#ffffff4d] hover:bg-[#ffffffeb]`}>
+            <li onClick={() => scrollToSection(sections.about)} className="xs:text-sm sm:text-lg cursor-pointer menu-item">About</li>
+            <li onClick={() => scrollToSection(sections.skills)} className="xs:text-sm sm:text-lg cursor-pointer menu-item">Skills</li>
+            <li onClick={() => scrollToSection(sections.projects)} className="xs:text-sm sm:text-lg cursor-pointer menu-item">Projects</li>
+            <li onClick={() => scrollToSection(sections.contact)} className="xs:text-sm sm:text-lg cursor-pointer menu-item">Contact</li>
         </ul>
     )
 }
