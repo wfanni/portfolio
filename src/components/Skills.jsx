@@ -25,30 +25,30 @@ const Skills = forwardRef(function Skills({}, ref) {
   return (
     <section
       ref={ref}
-      className="min-h-screen h-fit xs:pt-16 sm:pt-0 flex flex-col justify-center items-center gap-12"
+      className="min-h-screen h-fit xs:pt-16 lg:pt-0 flex flex-col justify-center items-center gap-12"
     >
       <h2 className="text-[3rem] uppercase">Skills</h2>
-      <div className="xs:w-4/5 sm:w-3/4 mx-auto flex justify-between items-center xs:flex-col sm:flex-row xs:gap-16 sm:gap-0">
-        <div className="w-full flex flex-col items-center justify-start xs:gap-8 sm:gap-12">
-          <div className="xs:w-full sm:w-3/4 flex items-center gap-4">
+      <div className="xs:w-4/5 lg:w-3/4 mx-auto flex justify-between items-center xs:flex-col lg:flex-row xs:gap-16 lg:gap-0">
+        <div className="w-full flex flex-col items-center justify-start xs:gap-8 lg:gap-12">
+          <div className="xs:w-full lg:w-3/4 flex items-center gap-4">
             <label className="min-w-24">HTML</label>
             <span className="relative inline-block w-full h-4 bg-slate-300 text-white leading-[3rem] before:content-[''] before:absolute before:h-4 before:w-[95%] before:pl-4 before:bg-orange"></span>
           </div>
-          <div className="xs:w-full sm:w-3/4 flex items-center gap-4">
+          <div className="xs:w-full lg:w-3/4 flex items-center gap-4">
             <label className="min-w-24">CSS (SCSS)</label>
             <span className="relative inline-block w-full h-4 bg-slate-300 text-white leading-[3rem] before:content-[''] before:absolute before:h-4 before:w-[95%] before:pl-4 before:bg-orange"></span>
           </div>
-          <div className="xs:w-full sm:w-3/4 flex items-center gap-4">
+          <div className="xs:w-full lg:w-3/4 flex items-center gap-4">
             <label className="min-w-24">JS</label>
             <span className="relative inline-block w-full h-4 bg-slate-300 text-white leading-[3rem] before:content-[''] before:absolute before:h-4 before:w-[70%] before:pl-4 before:bg-orange"></span>
           </div>
-          <div className="xs:w-full sm:w-3/4 flex items-center gap-4">
+          <div className="xs:w-full lg:w-3/4 flex items-center gap-4">
             <label className="min-w-24">REACT</label>
             <span className="relative inline-block w-full h-4 bg-slate-300 text-white leading-[3rem] before:content-[''] before:absolute before:h-4 before:w-[50%] before:pl-4 before:bg-orange"></span>
           </div>
         </div>
         <div className="w-full flex flex-col items-center justify-start gap-12">
-          <div className="xs:w-full sm:w-3/4 flex flex-wrap items-center justify-center gap-4">
+          <div className="xs:w-full lg:w-3/4 flex flex-wrap items-center justify-center gap-4">
             {skills &&
               skills.map((skill, index) => {
                 return (
@@ -61,7 +61,7 @@ const Skills = forwardRef(function Skills({}, ref) {
           </div>
         </div>
       </div>
-      <p className="xs:w-4/5 sm:w-full flex flex-col gap-4 items-center justify-center">
+      <p className="xs:w-4/5 lg:w-full flex flex-col gap-4 items-center justify-center">
         <span className="min-w-[200px] w-[200px] text-center border-b-2 border-orange">
           Current Goals:
         </span>
