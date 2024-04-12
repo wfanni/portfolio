@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+i {
+  color: #20063b;
+}
+
 .contact {
   background: linear-gradient(to top, #6eeb83, #c7f7cf 60%);
 }

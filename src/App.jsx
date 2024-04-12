@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { useEffect, useState, useRef } from 'react';
+import Design from './components/Design';
 
 export default function App() {
   const [scrollY, setScrollY] = useState(window.scrollY);
@@ -15,6 +16,7 @@ export default function App() {
   const aboutRef = useRef();
   const skillsRef = useRef();
   const projectsRef = useRef();
+  const designRef = useRef();
   const contactRef = useRef();
 
   function onScroll() {
@@ -35,13 +37,14 @@ export default function App() {
 
   return (
     <>
-      <Toolbar scrollPosition={scrollY} sections={{about: aboutRef, skills: skillsRef, projects: projectsRef, contact: contactRef}} />
+      <Toolbar scrollPosition={scrollY} sections={{about: aboutRef, skills: skillsRef, projects: projectsRef, design: designRef, contact: contactRef}} />
       <Intro ref={introRef} />
       <About ref={aboutRef} />
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
+      <Design ref={designRef} />
       <Contact ref={contactRef} />
-      <button className={`backToTop fixed xs:right-6 sm:right-12 xs:bottom-6 sm:bottom-12 xs:px-6 sm:px-8 xs:py-4 sm:py-6 transition-all duration-200 rounded-full bg-white/50 text-orange ${scrollY >= 1000 ? 'opacity-100' : 'opacity-0'}`} type='button' onClick={backToTop} ><i className="xs:text-2xl sm:text-5xl fa-solid fa-arrow-up"></i></button>
+      <button className={`backToTop fixed xs:right-6 sm:right-12 xs:bottom-6 sm:bottom-12 xs:px-6 sm:px-8 xs:py-4 sm:py-6 transition-all duration-200 rounded-full bg-white/50 text-orange ${scrollY >= 1000 ? 'opacity-100' : 'opacity-0'}`} type='button' onClick={backToTop} ><i className="xs:text-2xl sm:text-5xl text-orange fa-solid fa-arrow-up"></i></button>
 
     </>
   )
