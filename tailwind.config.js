@@ -10,6 +10,13 @@ export default {
       base: '1.4rem',
     },
     extend: {
+      backgroundImage: {
+        'intro': "url('/src/assets/bg-1.svg')",
+        'about': "url('/src/assets/bg-12.svg')",
+        'skills': "url('/src/assets/bg-2.svg')",
+        'projects': "url('/src/assets/bg-32.svg')",
+        'contact': "url('/src/assets/contact-bg-1.svg')",
+      },
       screens: {
         'xs': '320px',
       },

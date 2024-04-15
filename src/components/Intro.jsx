@@ -8,7 +8,7 @@ export default function Intro() {
         setSubtitleOpacity(true);
     }, 1700)
     return (
-        <section className="xs:h-[100vh] sm:h-screen relative flex flex-col items-center justify-center">
+        <section className="bg-intro xs:bg-cover lg:bg-[length:100%] bg-no-repeat xs:bg-[center_bottom_-15rem] lg:bg-bottom xs:h-[100vh] sm:h-screen relative flex flex-col items-center justify-center">
             <img className="mt-[-8rem] w-20" src={logo} alt="logo" />
             <h1 className="relative w-full mt-[6rem] flex flex-col items-center justify-center">
                 {/* <span className="absolute xs:translate-x-[-30px] sm:translate-x-[-30px] md:translate-x-[-100px] lg:translate-x-[-100px] xs:text-4xl sm:text-[4rem] uppercase xs:animate-fadeInLeftXS sm:animate-fadeInLeftS md:animate-fadeInLeft lg:animate-fadeInLeftLG">Hi, I'm Fanni</span>

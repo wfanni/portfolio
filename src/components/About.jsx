@@ -3,7 +3,7 @@ import { forwardRef } from 'react';
 
 const About = forwardRef(function About({}, ref) {
     return (
-        <section ref={ref} className="min-h-screen h-fit pt-16 flex flex-col justify-center items-center gap-12">
+        <section ref={ref} className="bg-about xs:bg-cover lg:bg-[length:100%] bg-no-repeat xs:bg-[center_top_-20rem] lg:bg-top min-h-screen h-fit pt-16 flex flex-col justify-center items-center gap-12">
             <h2 className="text-[3rem] uppercase">About Me</h2>
             <div className="flex justify-center items-center lg:gap-24 xs:gap-12 xs:flex-col-reverse lg:flex-row">
                 <div className="xs:w-4/5 lg:w-2/5 text-justify flex flex-col gap-4">

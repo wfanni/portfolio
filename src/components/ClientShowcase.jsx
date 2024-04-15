@@ -41,49 +41,49 @@ export default function ClientShowcase() {
         <div>
           <div className="min-h-[100px] flex flex-col gap-4 justify-between items-center">
             <img className="w-14 object-cover" src={zurich} />
-            <label>Zurich Insurance</label>
+            <label className="text-center">Zurich Insurance</label>
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex flex-col gap-4 justify-between items-center">
             <img className="h-12 object-cover" src={hamilton} />
-            <label>Hamilton Insurance Group</label>
+            <label className="text-center">Hamilton Insurance Group</label>
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex flex-col gap-4 justify-between items-center">
             <img className="w-12 object-cover" src={sukoon} />
-            <label>Sukoon Insurance</label>
+            <label className="text-center">Sukoon Insurance</label>
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex flex-col gap-4 justify-between items-center">
             <img className="w-28 object-cover" src={cuvro} />
-            <label>Cuvro Insurance</label>
+            <label className="text-center">Cuvro Insurance</label>
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex flex-col gap-4 justify-between items-center">
             <img className="w-16 object-cover" src={flexport} />
-            <label>Flexport International</label>
+            <label className="text-center">Flexport International</label>
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex flex-col gap-4 justify-between items-center">
             <img className="w-16 object-cover" src={everest} />
-            <label>Everest Insurance</label>
+            <label className="text-center">Everest Insurance</label>
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex flex-col gap-4 justify-between items-center">
             <img className="w-28 object-cover" src={nowhealth} />
-            <label>Now Health International</label>
+            <label className="text-center">Now Health International</label>
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex flex-col gap-4 justify-between items-center">
             <img className="w-14 object-cover" src={rakbank} />
-            <label>RAK Insurance</label>
+            <label className="text-center">RAK Insurance</label>
           </div>
         </div>
       </Slider>

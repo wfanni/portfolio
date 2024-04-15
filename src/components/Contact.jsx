@@ -25,11 +25,11 @@ const Contact = forwardRef(function Contact({}, ref) {
   return (
     <section
       ref={ref}
-      className="contact h-screen w-full pt-16 pb-32 flex flex-col justify-center items-center gap-12"
+      className="contact min-h-screen w-full pt-16 pb-32 flex flex-col justify-center items-center gap-12"
     >
       <h2 className="text-[3rem] -mt-16 uppercase">Contact me</h2>
-      <div className="relative xs:w-4/5 lg:w-1/2 flex justify-center items-center gap-12">
-        <div className="xs:hidden lg:flex w-full h-full flex-col justify-between items-end">
+      <div className="relative h-full xs:w-4/5 lg:w-1/2 flex justify-center items-center gap-12">
+        <div className="xs:hidden lg:flex w-full h-full flex-col justify-between items-end gap-12">
           <span className="min-h-[45px] w-fit py-2 px-4 pt-[0.6rem] leading-[inherit]">
             Send me an email:
           </span>

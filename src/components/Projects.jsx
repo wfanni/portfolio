@@ -4,7 +4,7 @@ import ClientShowcase from './ClientShowcase';
 
 const Projects = forwardRef(function Projects({}, ref) {
     return (
-        <section ref={ref} className="min-h-screen h-fit pt-16 w-full flex flex-col justify-center items-center gap-12">
+        <section ref={ref} className="bg-projects xs:bg-cover lg:bg-[length:100%] bg-no-repeat xs:bg-[left_top_-7rem] lg:bg-top min-h-screen h-fit pt-16 w-full flex flex-col justify-center items-center gap-12">
             <h2 className="text-[3rem] uppercase">Projects</h2>
             <h3 className="xs:w-4/5 lg:w-3/5 text-center text-lg">In my current job, I have worked with some of the biggest insurance companies, but as I cannot really showcase those projects here, I started developing Demo apps.</h3>
             <ClientShowcase />
