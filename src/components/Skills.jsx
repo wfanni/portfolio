@@ -67,7 +67,7 @@ const Skills = forwardRef(function Skills({}, ref) {
           Current Goals:
         </span>
         <span className="text-center">
-          Mastering React.js & learn Vue.js and Angular - improve Wordress
+          Mastering React.js & learn Vue.js and Angular - improve Wordpress
           skills and learn Shopify
         </span>
       </p>
