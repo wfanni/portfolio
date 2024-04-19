@@ -40,7 +40,7 @@ export default function Toolbar({ scrollPosition, sections }) {
                     </div>
                 </label>
             </div>
-            <ul className={`${scrollStylesUl} ${isMenuOpen ? 'xs:translate-y-0 xs:pt-20' : 'xs:-translate-y-[100vh] lg:translate-y-0'} xs:min-h-[100vh] lg:min-h-16 w-full xs:z-60 lg:z-10 xs:absolute lg:fixed top-0 flex xs:flex-col lg:flex-row xs:justify-start lg:justify-center items-center xs:gap-12 lg:gap-24 transition-all duration-200`} >
+            <ul className={`${scrollStylesUl} ${isMenuOpen ? 'xs:translate-y-0 xs:pt-20 lg:pt-0' : 'xs:-translate-y-[100vh] lg:translate-y-0'} xs:min-h-[100vh] lg:min-h-16 w-full xs:z-60 lg:z-10 xs:absolute lg:fixed top-0 flex xs:flex-col lg:flex-row xs:justify-start lg:justify-center items-center xs:gap-12 lg:gap-24 transition-all duration-200`} >
                 <li onClick={() => {scrollToSection(sections.about), menuItemClick()}} className="xs:text-2xl lg:text-lg cursor-pointer menu-item">About</li>
                 <li onClick={() => {scrollToSection(sections.skills), menuItemClick()}} className="xs:text-2xl lg:text-lg cursor-pointer menu-item">Skills</li>
                 <li onClick={() => {scrollToSection(sections.projects), menuItemClick()}} className="xs:text-2xl lg:text-lg cursor-pointer menu-item">Projects</li>

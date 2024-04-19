@@ -1,5 +1,6 @@
-import me from '../assets/about-img.png';
 import { forwardRef } from 'react';
+import me from '../assets/about-img.png';
+import cv from '../assets/CV-Fanni-Wihl-ENG.pdf';
 
 const About = forwardRef(function About({}, ref) {
     return (
@@ -12,6 +13,7 @@ const About = forwardRef(function About({}, ref) {
                     <p>My dream is to live and work in an environment where I can pursue both of my passions; Frontend Development and Travel. Meeting people excites me and I strongly believe that a supportive team is crucial for success.</p>
                     <p>I am eager to see what the future holds for me and ready to confront any obstacles head on! I am open to opportunities, collaborations and expanding my skill set so please don't hesitate to reach out if you found me interesting.</p>
                     <p>Thanks for stopping by. Can’t wait to connect with you!</p>
+                    <a download href={cv} alt="download my cv" className="w-fit mt-4 xs:mx-auto lg:mr-0 lg:ml-auto py-2 px-6 pt-[0.7rem] bg-orange text-white rounded-full shadow-xl transition-all duration-200 hover:scale-[1.1] hover:bg-[#fc7651]">Download my CV</a>
                 </div>
                 <div className="relative xs:w-4/5 lg:w-1/3">
                     <img src={me} alt="image-of-me"/>

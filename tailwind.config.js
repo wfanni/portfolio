@@ -15,7 +15,7 @@ export default {
         'about': "url('/src/assets/bg-12.svg')",
         'skills': "url('/src/assets/bg-2.svg')",
         'projects': "url('/src/assets/bg-32.svg')",
-        'contact': "url('/src/assets/contact-bg-1.svg')",
+        'contact': "url('/src/assets/contact-blob32.svg')",
       },
       screens: {
         'xs': '320px',

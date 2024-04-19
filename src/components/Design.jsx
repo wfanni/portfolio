@@ -4,7 +4,7 @@ const Design = forwardRef(function Design({}, ref) {
   return (
     <section
       ref={ref}
-      className="min-h-screen h-fit xs:pt-16 lg:pt-0 flex flex-col justify-center items-center gap-12"
+      className="min-h-screen h-fit xs:pt-16 lg:pt-0 pb-8 flex flex-col justify-center items-center gap-12"
     >
       <h2 className="xs:text-[2rem] sm:text-[3rem] uppercase">Portfolio Design</h2>
       <div className="xs:w-4/5 lg:w-3/4 mx-auto flex flex-col justify-between items-center xs:gap-16 lg:gap-16">
@@ -42,7 +42,7 @@ const Design = forwardRef(function Design({}, ref) {
           </div>
           <div className="xs:w-full lg:w-1/2 flex flex-col justify-center items-center xs:gap-8 lg:gap-4 xs:text-justify lg:text-center">
             <h3 className="text-[1.6rem] uppercase">Font</h3>
-            <p>I planned on using two fonts in the beginning, but I felt like it was better for the smaller texts as well this time. Even though Josefin Sans is rather a display font, I prefered using it in the About section instead of Poppins.</p>
+            <p>I planned on using two fonts in the beginning, but I felt like Josefin Sans was better for the smaller texts as well this time. Even though it's rather a display font, I prefered using it instead of Poppins.</p>
             <span className="xs:text-[3rem] lg:text-[4.5rem]">Josefin Sans</span>
           </div>
         </div>

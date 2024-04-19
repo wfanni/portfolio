@@ -10,6 +10,7 @@ const Skills = forwardRef(function Skills({}, ref) {
     "Jira",
     "MongoDB",
     "Postman",
+    "Vite",
     "Express.js",
     "Illustrator",
     "VS Code",
@@ -31,22 +32,22 @@ const Skills = forwardRef(function Skills({}, ref) {
       <h2 className="text-[3rem] uppercase">Skills</h2>
       <div className="xs:w-4/5 lg:w-3/4 mx-auto flex justify-between items-center xs:flex-col lg:flex-row xs:gap-16 lg:gap-0">
         <div className="w-full flex flex-col items-center justify-start xs:gap-8 lg:gap-12">
-          <div className="xs:w-full lg:w-3/4 flex items-center gap-4">
-            <label className="min-w-24">HTML</label>
-            <span className="relative inline-block w-full h-4 bg-slate-300 text-white leading-[3rem] before:content-[''] before:absolute before:h-4 before:w-[95%] before:pl-4 before:bg-orange"></span>
-          </div>
-          <div className="xs:w-full lg:w-3/4 flex items-center gap-4">
-            <label className="min-w-24">CSS (SCSS)</label>
-            <span className="relative inline-block w-full h-4 bg-slate-300 text-white leading-[3rem] before:content-[''] before:absolute before:h-4 before:w-[95%] before:pl-4 before:bg-orange"></span>
-          </div>
-          <div className="xs:w-full lg:w-3/4 flex items-center gap-4">
-            <label className="min-w-24">JS</label>
-            <span className="relative inline-block w-full h-4 bg-slate-300 text-white leading-[3rem] before:content-[''] before:absolute before:h-4 before:w-[70%] before:pl-4 before:bg-orange"></span>
-          </div>
-          <div className="xs:w-full lg:w-3/4 flex items-center gap-4">
-            <label className="min-w-24">REACT</label>
-            <span className="relative inline-block w-full h-4 bg-slate-300 text-white leading-[3rem] before:content-[''] before:absolute before:h-4 before:w-[50%] before:pl-4 before:bg-orange"></span>
-          </div>
+          <label className="w-full flex">
+            <span className="min-w-[85px]">HTML</span>
+            <progress className="ml-4 w-full" value="90" max="100"></progress>
+          </label>
+          <label className="w-full flex">
+            <span className="min-w-[85px]">SCSS</span>
+            <progress className="ml-4 w-full" value="90" max="100"></progress>
+          </label>
+          <label className="w-full flex">
+          <span className="min-w-[85px]">JS</span>
+            <progress className="ml-4 w-full" value="60" max="100"></progress>
+          </label>
+          <label className="w-full flex">
+          <span className="min-w-[85px]">REACT</span>
+            <progress className="ml-4 w-full" value="50" max="100"></progress>
+          </label>
         </div>
         <div className="w-full flex flex-col items-center justify-start gap-12">
           <div className="xs:w-full lg:w-3/4 flex flex-wrap items-center justify-center gap-4">

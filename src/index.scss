@@ -11,12 +11,37 @@ body {
   overflow-x: hidden;
 }
 
+progress {
+  border-radius: 10px;
+}
+progress::-webkit-progress-bar {
+  background-color: #d7d7d7;
+  border-radius: 10px;
+
+}
+progress::-webkit-progress-value {
+  background-color: #ff5d30;
+  border-radius: 10px;
+
+}
+progress::-moz-progress-bar {
+  border-radius: 10px;
+}
+
+dialog::backdrop {
+  background-color: #20063b68;
+  backdrop-filter: blur(2px);
+}
+
 i {
   color: #20063b;
 }
 
 .contact {
-  background: linear-gradient(to top, #6eeb83, #c7f7cf 60%);
+  // background: linear-gradient(to top, #6eeb83, #c7f7cf 60%);
+  .profile-badge {
+    border-radius: 25px;
+  }
 }
 
 .about {
