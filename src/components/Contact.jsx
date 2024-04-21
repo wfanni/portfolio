@@ -1,30 +1,9 @@
-import { forwardRef, useRef, useState, useEffect } from "react";
+import { forwardRef } from "react";
 import github from "../assets/github.png";
 import profile from "../assets/github-profile.png";
 import EmailForm from "./EmailForm";
 
 const Contact = forwardRef(function Contact({}, ref) {
-  const [isCopied, setIsCopied] = useState(false);
-  const emailRef = useRef();
-
-
-  function handleBlur(e) {
-    if (emailRef.current && !emailRef.current.contains(e.target)) {
-      setIsCopied(false);
-    }
-  }
-
-  function copyToClipboard() {
-    navigator.clipboard.writeText("fanniwihl@gmail.com");
-    setIsCopied(true);
-  }
-
-  useEffect(() => {
-    document.addEventListener("click", handleBlur, true);
-    return () => {
-      document.removeEventListener("click", handleBlur, true);
-    };
-  }, []);
 
   return (
     <section
@@ -62,7 +41,7 @@ const Contact = forwardRef(function Contact({}, ref) {
           </div>
           <div className="relative w-full flex xs:justify-center lg:justify-between">
             <div
-              className="badge-base LI-profile-badge w-[250px] h-[240px] rounded-[25px] overflow-hidden shadow-lg"
+              className="badge-base LI-profile-badge w-[250px] h-[281px] rounded-[25px] overflow-hidden shadow-lg"
               data-locale="en_US"
               data-size="medium"
               data-theme="light"
