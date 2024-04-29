@@ -30,7 +30,7 @@ const Skills = forwardRef(function Skills({}, ref) {
   return (
     <section
       ref={ref}
-      className="bg-skills xs:bg-cover lg:bg-[length:100%] bg-no-repeat xs:bg-[center_bottom_-26rem] md:bg-[center_bottom_-20rem] lg:bg-bottom min-h-screen h-fit xs:pt-16 lg:pt-8 flex flex-col justify-center items-center gap-12"
+      className="bg-skills xs:bg-cover lg:bg-[length:100%] bg-no-repeat xs:bg-[center_bottom_-26rem] md:bg-[center_bottom_-20rem] lg:bg-bottom min-h-screen h-fit xs:pt-16 lg:pt-0 flex flex-col justify-center items-center gap-12"
     >
       <h2 className="text-[3rem] uppercase">{t("skillsTitle")}</h2>
       <div className="xs:w-4/5 lg:w-3/4 mx-auto flex justify-between items-center xs:flex-col lg:flex-row xs:gap-16 lg:gap-0">
