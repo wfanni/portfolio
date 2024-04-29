@@ -1,0 +1,52 @@
+{
+    "menuAbout": "About",
+    "menuSkills": "Skills",
+    "menuProjects": "Projects",
+    "menuDesign": "Design",
+    "menuContact": "Contact",
+
+    "introHello": "Hi, I'm Fanni",
+    "introDesc": "Frontend Developer",
+
+    "aboutTitle": "About Me",
+    "aboutContent1": "Hi there! I'm Fanni, a Frontend developer who's enthusiastic about taking on challenges and opportunities for learning. Since I first dabbled in coding I realized that creating user friendly interfaces is my passion.",
+    "aboutContent2": "I am driven by my desire to constantly learn and grow personally. I enjoy working on projects that help me enhance my skills and discover emerging technologies. My ultimate aim is to develop user experiences that have a positive impact.",
+    "aboutContent3": "My dream is to live and work in an environment where I can pursue both of my passions; Frontend Development and Travel. Meeting people excites me and I strongly believe that a supportive team is crucial for success.",
+    "aboutContent4": "I am eager to see what the future holds for me and ready to confront any obstacles head on! I am open to opportunities, collaborations and expanding my skill set so please don't hesitate to reach out if you found me interesting.",
+    "aboutContent5": "Thanks for stopping by. Can’t wait to connect with you!",
+    "CVcta": "Download my CV",
+    
+    "skillsTitle": "Skills",
+    "goalsTitle": "Current goals:",
+    "goalsContent": "Mastering React.js & learn Vue.js and Angular - improve Wordpress skills and learn Shopify",
+
+    "projectsTitle": "Projects",
+    "projectsIntro": "In my current job, I have worked with some of the biggest insurance companies, but as I cannot really showcase those projects here, I started developing Demo apps.",
+    "projectsDemoTitle": "My Demo Apps",
+    "projectDemoCTA": "Check it out live!",
+    "projectDemo1Content1": "This is a small Project Manager Application, where you can add personal projects you're currently working on or planning to start in the future. You can add/remove task items and track what tasks have been finished already.",
+    "projectDemo1Content2": "I went for a rather minimalistic, but colorful and playful design, also made sure you can easily use the App on mobile and smaller devices.",
+    "projectDemo1Content3": "You will also be able to see if a project's deadline is approaching and database will also be set up. It is still in progress, ",
+    "projectDemo1FeedbackCTA": "I would appreciate your feedback!",
+
+    "designTitle1": "The idea",
+    "designContent1": "My goal with this Portfolio is to create a simple, minimalistic website where I can list my personal and demo projects on. In the future I am planning to develop more of these projects so I can fill the Projects section a bit more..",
+    "designContent2": "I might play around with the design in the future!",
+    "designTitle2": "Colors",
+    "designContent3": "I love orange and green, so I defnitely wanted to use my two favourite colors in the App.",
+    "designTitle3": "Font",
+    "designContent4": "I planned on using two fonts in the beginning, but I felt like Josefin Sans was better for the smaller texts as well this time. Even though it's rather a display font, I prefered using it instead of Poppins.",
+
+    "contactTitle": "Contact Me",
+    "contactFormComment": "Feel free to leave me a note, thought or feedback! Can't wait to hear from you!",
+    "formPlaceholderName": "Your name",
+    "formPlaceholderEmail": "Your email",
+    "formPlaceholderMessage": "Your message",
+    "formSubmit": "Send",
+    "linkedinHeadline": "Frontend Developer 👩‍💻 Innoveo | React & UI/UX Enthusiast | Globetrotter 🌍",
+    "contactCTA": "View profile",
+
+    "thankYouModalTitle": "Thank you for reaching out!",
+    "thankYouModalContent": "I will be in touch as soon as possible!",
+    "thankYouModalClose": "Close"
+}
