@@ -1,0 +1,52 @@
+{
+    "menuAbout": "Sobre mí",
+    "menuSkills": "Habilidades",
+    "menuProjects": "Proyectos",
+    "menuDesign": "Design",
+    "menuContact": "Contacto",
+
+    "introHello": "Hola, soy Fanni",
+    "introDesc": "Desarrolladora Frontend",
+
+    "aboutTitle": "Sobre mí",
+    "aboutContent1": "¡Hola! Soy Fanni, una desarrolladora Frontend entusiasmada por asumir desafíos y aprovechar oportunidades de aprendizaje. Desde que empecé a programar, me di cuenta de que crear interfaces fáciles de usar es mi pasión.",
+    "aboutContent2": "Me motiva aprender constantemente y crecer personalmente. Disfruto trabajando en proyectos que me ayuden a mejorar mis habilidades y descubrir tecnologías emergentes. Mi objetivo es desarrollar experiencias de usuario que tengan un impacto positivo.",
+    "aboutContent3": "Mi sueño es vivir y trabajar en un entorno donde pueda perseguir mis dos pasiones: el desarrollo Frontend y los viajes. Me encanta conocer gente nueva y creo firmemente que un equipo solidario es crucial para el éxito.",
+    "aboutContent4": "Estoy ilusionada por ver lo que me depara el futuro y dispuesta a enfrentarme a cualquier obstáculo. Estoy abierta a oportunidades, colaboraciones y a ampliar mis commpetencias, así que no dudes en contactarme si te resulto interesante.",
+    "aboutContent5": "Gracias por pasar por aquí, ¡espero conectar contigo!",
+    "CVcta": "Descarga mi CV",
+
+    "skillsTitle": "Habilidades",
+    "goalsTitle": "Metas actuales:",
+    "goalsContent": "Dominar React.js y aprender Vue.js y Angular - mejorar mis habilidades de Wordpress y aprender Shopify",
+
+    "projectsTitle": "Proyectos",
+    "projectsIntro": "En mi trabajo actual, he trabajado con algunas de las mayores compañías de seguros, pero como no puedo mostrar esos proyectos aquí, empecé a desarrollar aplicaciones Demo.",
+    "projectsDemoTitle": "Mis Apps Demo",
+    "projectDemoCTA": "Échale un vistazo en vivo!",
+    "projectDemo1Content1": "Esta es una pequeña aplicación de Gestión de Proyectos, donde puedes agregar proyectos personales en los que estás trabajando actualmente o planeas comenzar en el futuro. Puedes añadir o quitar elementos de tarea y hacer un seguimiento de qué tareas ya han sido completadas.",
+    "projectDemo1Content2": "Opté por un diseño bastante minimalista, pero colorido y lúdico, además me aseguré de que puedas usar fácilmente la aplicación en dispositivos móviles y más pequeños.",
+    "projectDemo1Content3": "También podrás ver si se acerca la fecha límite de un proyecto y planeo configurar una base de datos. Todavía está en progreso, ",
+    "projectDemo1FeedbackCTA": "¡agradecería tus comentarios!",
+
+    "designTitle1": "La idea",
+    "designContent1": "Mi objetivo con este portfolio es crear un sitio web simple y minimalista donde pueda listar mis proyectos personales. En el futuro, planeo desarrollar más de estos proyectos para poder llenar un poco más la sección de Proyectos.",
+    "designContent2": "¡Es posible que juegue con el diseño en el futuro!",
+    "designTitle2": "Colores",
+    "designContent3": "Me encantan el naranja y el verde, así que definitivamente quería usar mis dos colores favoritos en la aplicación.",
+    "designTitle3": "Fuente",
+    "designContent4": "Al principio, planeaba usar dos fuentes, pero sentí que Josefin Sans era mejor para los textos más pequeños esta vez. Aunque es más bien una fuente de visualización, preferí usarla en lugar de Poppins.",
+
+    "contactTitle": "Contáctame",
+    "contactFormComment": "¡Dejame una nota, pensamiento o feedback! ¡Estoy deseando saber de ti!",
+    "formPlaceholderName": "Tu nombre",
+    "formPlaceholderEmail": "Tu email",
+    "formPlaceholderMessage": "Tu mensaje",
+    "formSubmit": "Enviar",
+    "linkedinHeadline": "Desarrolladora Frontend 👩‍💻 Innoveo | React & UI/UX | Trotamundos 🌍",
+    "contactCTA": "Ver perfil",
+
+    "thankYouModalTitle": "¡Gracias por ponerte en contacto!",
+    "thankYouModalContent": "Me pondré en contacto contigo lo antes posible.",
+    "thankYouModalClose": "Cerrar"
+}

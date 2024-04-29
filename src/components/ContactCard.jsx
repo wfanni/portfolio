@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 export default function ContactCard({ logo, profile, link, version }) {
+  const { t } = useTranslation();
+
   const headline = (
-    <label className="text-[0.9rem]">
-      Frontend Developer 👩‍💻 Innoveo | React & UI/UX Enthusiast | Globetrotter 🌍
-    </label>
+    <label className="text-[0.9rem]">{t("linkedinHeadline")}</label>
   );
   const CTAbutton = (
     <button
@@ -13,7 +15,7 @@ export default function ContactCard({ logo, profile, link, version }) {
       }`}
     >
       <a href={link} target="_blank">
-        View profile
+        {t("contactCTA")}
       </a>
     </button>
   );
