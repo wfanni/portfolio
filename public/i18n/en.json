@@ -1,12 +1,16 @@
 {
-    "menuAbout": "About",
+    "menuWorks": "Works",
     "menuSkills": "Skills",
     "menuProjects": "Projects",
-    "menuDesign": "Design",
+    "menuAbout": "About",
     "menuContact": "Contact",
 
-    "introHello": "Hi, I'm Fanni",
-    "introDesc": "Frontend Developer",
+    "introHello1": "Hi there,",
+    "introHello2": "My name is Fanni",
+    "introDesc1": "I'm a",
+    "introDesc2": "UI/UX Developer",
+    "introDesc3": "with",
+    "introDesc4": "skills.",
 
     "aboutTitle": "About Me",
     "aboutContent1": "Hi there! I'm Fanni, a Frontend developer who's enthusiastic about taking on challenges and opportunities for learning. Since I first dabbled in coding I realized that creating user friendly interfaces is my passion.",

@@ -11,7 +11,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'intro': "url('/src/assets/bg-1.svg')",
+        'intro': "url('/src/assets/designer-hero1.png')",
         'about': "url('/src/assets/bg-12.svg')",
         'skills': "url('/src/assets/bg-2.svg')",
         'projects': "url('/src/assets/bg-32.svg')",
