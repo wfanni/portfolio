@@ -1,11 +1,12 @@
 {
     "menuWorks": "Works",
-    "menuSkills": "Skills",
-    "menuProjects": "Projects",
     "menuAbout": "About",
     "menuContact": "Contact",
+    "subMenuUI": "UI/UX",
+    "subMenuSocial": "Social Media",
+    "subMenuPhoto": "Photography",
 
-    "introHello1": "Hi there,",
+    "introHello1": "Hi there 👋",
     "introHello2": "My name is Fanni",
     "introDesc1": "I'm a",
     "introDesc2": "UI/UX Developer",
@@ -13,14 +14,10 @@
     "introDesc4": "skills.",
 
     "aboutTitle": "About Me",
-    "aboutContent1": "Hi there! I'm Fanni, a Frontend developer who's enthusiastic about taking on challenges and opportunities for learning. Since I first dabbled in coding I realized that creating user friendly interfaces is my passion.",
-    "aboutContent2": "I am driven by my desire to constantly learn and grow personally. I enjoy working on projects that help me enhance my skills and discover emerging technologies. My ultimate aim is to develop user experiences that have a positive impact.",
-    "aboutContent3": "My dream is to live and work in an environment where I can pursue both of my passions; Frontend Development and Travel. Meeting people excites me and I strongly believe that a supportive team is crucial for success.",
-    "aboutContent4": "I am eager to see what the future holds for me and ready to confront any obstacles head on! I am open to opportunities, collaborations and expanding my skill set so please don't hesitate to reach out if you found me interesting.",
-    "aboutContent5": "Thanks for stopping by. Can’t wait to connect with you!",
+    "aboutContent1": "I'm a creative mind passionate about design, marketing, and all things digital. I love turning ideas into engaging, user-friendly experiences. Take a look around, and let’s connect! 🚀",
     "CVcta": "Download my CV",
     
-    "skillsTitle": "Skills",
+    "CTATitle": "Check out what I do",
     "goalsTitle": "Current goals:",
     "goalsContent": "Mastering React.js & learn Vue.js and Angular - improve Wordpress skills and learn Shopify",
 
@@ -42,7 +39,7 @@
     "designContent4": "I planned on using two fonts in the beginning, but I felt like Josefin Sans was better for the smaller texts as well this time. Even though it's rather a display font, I prefered using it instead of Poppins.",
 
     "contactTitle": "Contact Me",
-    "contactFormComment": "Feel free to leave me a note, thought or feedback! Can't wait to hear from you!",
+    "contactFormComment": "Feel free to leave me a note, thought or feedback! 📫 Can't wait to hear from you! ✨",
     "formPlaceholderName": "Your name",
     "formPlaceholderEmail": "Your email",
     "formPlaceholderMessage": "Your message",

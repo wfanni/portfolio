@@ -5,6 +5,8 @@ export default {
   theme: {
     fontFamily: {
       'poppins': ['"Poppins"', 'sans-serif'],
+      'playfair': ['"Playfair Display"', 'serif'],
+      'abril': ['"Abril Fatface"', 'serif'],
     },
     fontSize: {
       base: '1.4rem',
@@ -15,7 +17,7 @@ export default {
         'about': "url('/src/assets/bg-12.svg')",
         'skills': "url('/src/assets/bg-2.svg')",
         'projects': "url('/src/assets/bg-32.svg')",
-        'contact': "url('/src/assets/contact-blob33.svg')",
+        'contact': "url('/src/assets/iphone-mockup-2.png')",
       },
       screens: {
         'xs': '320px',
@@ -23,7 +25,7 @@ export default {
       colors: {
         orange: '#ff5d30',
         green: '#6EEB83',
-        dark: '#20063B',
+        dark: '#2B363C',
       },
       animation: {
         fadeInLeft: 'fadeInLeft 0.5s',

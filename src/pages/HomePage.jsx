@@ -7,19 +7,19 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
-export default function HomePage({ sections, lang, changeLanguage }) {
+export default function HomePage({ sections, lang, changeLanguage, selectedLangguage }) {
   
   return (
     <>
-      <Menu scrollPosition={scrollY} sections={sections} changeLanguage={changeLanguage} lang={lang} />
-      <Intro />
+      <Menu scrollPosition={scrollY} sections={sections} changeLanguage={changeLanguage} lang={lang} selectedLanguage={selectedLangguage}/>
+      <Intro selectedLanguage={selectedLangguage} />
       <About ref={sections.about} lang={lang} />
         <Skills ref={sections.skills} />
-        <Projects
+        {/* <Projects
           ref={sections.projects}
           feedbackRef={sections.contact}
           lang={lang}
-        />
+        /> */}
         <Contact ref={sections.contact} />
     </>
   );

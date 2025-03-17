@@ -39,11 +39,11 @@ export default function EmailForm() {
       });
   }
   return (
-    <>
-      <h2 className="mb-4 ml-4">{t("contactFormComment")}</h2>
+    <div className="-mt-28 flex flex-col gap-10">
+      <h2 className="font-normal w-full">{t("contactFormComment")}</h2>
       <form
         onSubmit={(e) => handleEmailSubmmit(e)}
-        className="h-full flex flex-col gap-4 justify-center xs:items-center lg:items-end"
+        className="h-full min-h-[400px] w-full flex flex-col gap-8 justify-center xs:items-center lg:items-end"
       >
         <input
           onChange={(e) => setName(e.target.value)}
@@ -51,7 +51,7 @@ export default function EmailForm() {
           type="text"
           placeholder={t("formPlaceholderName")}
           required
-          className="w-full p-2 pt-[0.7rem] rounded-full indent-3 leading-6 outline-0 border-4 border-transparent transition-all duration-200 hover:border-green active:border-green focus:border-green"
+          className="w-full min-h-[45px] border-b-2 border-orange outline-0 indent-2 py-1 hover:border-b-4 active:border-b-4 focus:border-b-4 transition-all duration-200"
         />
         <input
           onChange={(e) => setEmail(e.target.value)}
@@ -59,7 +59,7 @@ export default function EmailForm() {
           type="email"
           placeholder={t("formPlaceholderEmail")}
           required
-          className="w-full p-2 pt-[0.7rem] rounded-full indent-3 leading-6 outline-0 border-4 border-transparent transition-all duration-200 hover:border-green active:border-green focus:border-green"
+          className="w-full min-h-[45px] border-b-2 border-orange outline-0 indent-2 py-1 hover:border-b-4 active:border-b-4 focus:border-b-4 transition-all duration-200"
         />
         <textarea
           onChange={(e) => setMessage(e.target.value)}
@@ -67,16 +67,16 @@ export default function EmailForm() {
           placeholder={t("formPlaceholderMessage")}
           rows="4"
           required
-          className="w-full p-2 pt-[0.7rem] rounded-[25px] indent-3 leading-6 outline-0 border-4 rounded-ee-none border-transparent transition-all duration-200 hover:border-green active:border-green focus:border-green"
+          className="w-full min-h-[135px] border-2 border-orange rounded-xl outline-0 indent-2 py-1 hover:border-4 active:border-4 focus:border-4 transition-all duration-200"
         />
         <button
-          className="w-fit lg:mr-6 py-2 px-12 pt-[0.7rem] bg-green text-dark uppercase rounded-full shadow-xl transition-all duration-200 hover:scale-[1.1] hover:bg-[#7ffa93] focus:scale-[1.1] focus:bg-[#7ffa93]"
+          className="w-fit py-2 px-10 text-black bg-orange/40 shadow-xl rounded-3xl hover:bg-orange hover:text-white hover:shadow-md transition-all duration-200"
           type="submit"
         >
           {t("formSubmit")}
         </button>
       </form>
       <SuccessEmailModal isSuccess={success} setIsSuccess={setSuccess} />
-    </>
+    </div>
   );
 }
