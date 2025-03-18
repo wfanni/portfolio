@@ -18,6 +18,7 @@ export default {
         'skills': "url('/src/assets/bg-2.svg')",
         'projects': "url('/src/assets/bg-32.svg')",
         'contact': "url('/src/assets/iphone-mockup-2.png')",
+        'design': "url('/src/assets/uiux-hero.svg')",
       },
       screens: {
         'xs': '320px',

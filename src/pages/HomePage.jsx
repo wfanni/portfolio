@@ -6,6 +6,7 @@ import Intro from "../components/Intro";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Design from "../components/Design";
 
 export default function HomePage({ sections, lang, changeLanguage, selectedLangguage }) {
   
@@ -15,6 +16,7 @@ export default function HomePage({ sections, lang, changeLanguage, selectedLangg
       <Intro selectedLanguage={selectedLangguage} />
       <About ref={sections.about} lang={lang} />
         <Skills ref={sections.skills} />
+        <Design ref={sections.design} />
         {/* <Projects
           ref={sections.projects}
           feedbackRef={sections.contact}

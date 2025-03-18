@@ -19,12 +19,14 @@ export default function App() {
   const skillsRef = useRef();
   const projectsRef = useRef();
   const contactRef = useRef();
+  const designRef = useRef();
 
   const sectionsContainer = {
     about: aboutRef,
     skills: skillsRef,
     projects: projectsRef,
     contact: contactRef,
+    design: designRef,
   };
 
   const [langCode, setLangCode] = useState("en");
@@ -105,8 +107,7 @@ export default function App() {
               changeLanguage={onChangeLang}
             />
           }
-        />
-        
+        />        
       </Routes>
       <button
         className={`backToTop fixed z-10 xs:right-4 sm:right-12 xs:bottom-4 sm:bottom-12 xs:px-6 sm:px-8 xs:py-4 xs:pt-[1.2rem] sm:py-6 transition-all duration-200 rounded-full bg-white/50 text-orange ${

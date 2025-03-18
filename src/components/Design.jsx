@@ -1,56 +1,64 @@
-import { forwardRef } from "react";
+import { forwardRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import designDetails from "../json/designdetails.json";
+import design from "../assets/uiux-hero.svg";
+import carjourney from "../assets/car-design1.svg";
+import traveljourney from "../assets/travel-design4.svg";
+import petjourney from "../assets/pet-design3.svg";
+import DesignDetails from "./DesignDetails";
 
 const Design = forwardRef(function Design({}, ref) {
   const { t } = useTranslation();
-
+  const [openPanel, setOpenPanel]= useState(0);
+  console.log(openPanel);
   return (
     <section
       ref={ref}
-      className="min-h-screen h-fit xs:pt-16 lg:pt-8 pb-8 flex flex-col justify-center items-center gap-12"
+      className="min-h-screen h-fit w-full  flex flex-col justify-center items-end"
     >
-      <h2 className="xs:text-[2rem] sm:text-[3rem] uppercase">
-        Portfolio Design
-      </h2>
-      <div className="xs:w-4/5 lg:w-3/4 mx-auto flex flex-col justify-between items-center xs:gap-16 lg:gap-16">
-        <div className="xs:text-justify lg:text-center">
-          <h3 className="text-[1.6rem] uppercase mb-4 text-center">
-            {t("designTitle1")}
-          </h3>
-          <p>{t("designContent1")}</p>
-          <p className="m-auto w-fit relative xs:mt-4">
-            {t("designContent2")}
-            <i className="absolute xs:top-6 sm:-top-2 lg:top-0 lg:-right-12 pl-2 text-orange text-[2.25rem] fa-solid fa-wand-magic-sparkles"></i>
-          </p>
+      <div className="w-2/3 mr-60 flex flex-col gap-20 justify-start items-center">
+        <div className="w-full flex flex-col justify-center items-center ">
+          <img src={design} className="w-full -mt-24 -mr-28"/>
+          <h2 className="w-fit -mr-24 -mt-8 xs:text-[2rem] sm:text-[3rem]  uppercase">
+            UI/UX Design & Development
+          </h2>
         </div>
-        <div className="w-full flex xs:flex-col lg:flex-row xs:gap-12 lg:gap-0 justify-between">
-          <div className="xs:w-full lg:w-1/2 flex flex-col justify-center items-center xs:gap-8 lg:gap-4 text-center">
-            <h3 className="text-[1.6rem] w-1/2 uppercase">
-              {t("designTitle2")}
-            </h3>
-            <p className="xs:w-full lg:w-2/3">{t("designContent3")}</p>
-            <div className="flex gap-4 xs:flex-wrap lg:flex-nowrap justify-center items-center">
-              <span className="block w-[100px] h-[100px] bg-orange text-white flex justify-center items-center">
-                #ff5d30
-              </span>
-              <span className="block w-[100px] h-[100px] bg-green text-black flex justify-center items-center">
-                #6eeb83
-              </span>
-              <span className="block w-[100px] h-[100px] bg-dark text-white flex justify-center items-center">
-                #20063b
-              </span>
-              <span className="block w-[100px] h-[100px] bg-white text-black flex justify-center items-center">
-                #ffffff
-              </span>
+        <div className="w-full max-w-3/4 -mr-28 flex justify-around items-start ">
+          <article className="design-panel flex flex-col justify-center gap-10 ">
+            <div onClick={() => setOpenPanel(1)} className="group relative overflow-hidden max-w-60 min-h-48 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end justify-center transition-all duration-200">
+              <div className="max-h-32 absolute top-0 w-full h-fit ">
+                <img src={carjourney} className="absolute -top-6 right-10 scale-[150%] opacity-50 group-hover:opacity-100 transition-all duration-200"/>
+              </div>
+              <div className="relative bg-white z-10 px-4 pb-2 pt-0">
+                <h3 className="text-[1.5rem] text-center">Car Insurance B2C Journey</h3>
+              </div>
             </div>
-          </div>
-          <div className="xs:w-full lg:w-1/2 flex flex-col justify-center items-center xs:gap-8 lg:gap-4 xs:text-justify lg:text-center">
-            <h3 className="text-[1.6rem] uppercase">{t("designTitle3")}</h3>
-            <p>{t("designContent4")}</p>
-            <span className="xs:text-[3rem] lg:text-[4.5rem]">
-              Josefin Sans
-            </span>
-          </div>
+          </article>
+          <article className="design-panel flex flex-col justify-center gap-10 ">
+            <div onClick={() => setOpenPanel(2)} className="group relative overflow-hidden max-w-60 min-h-48 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200">
+              <div className="max-h-32 absolute top-0 w-full h-fit ">
+                <img src={traveljourney} className="absolute top-2 left-10 scale-[155%] opacity-50 group-hover:opacity-100 transition-all duration-200"/>
+              </div>
+              <div className="relative bg-white z-10 px-4 pb-2 pt-0">
+                <h3 className="text-[1.5rem] text-center">Travel Insurance B2C Journey</h3>
+              </div>
+            </div>
+          </article>
+          <article className="design-panel flex flex-col justify-center gap-10 ">
+            <div onClick={() => setOpenPanel(3)} className="group relative overflow-hidden max-w-60 min-h-48 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200">
+              <div className="max-h-32 absolute top-0 w-full h-fit ">
+                <img src={petjourney} className="absolute -top-2 left-8 scale-[160%] opacity-50 group-hover:opacity-100 transition-all duration-200"/>
+              </div>
+              <div className="relative bg-white z-10 px-4 pb-2 pt-0">
+                <h3 className="text-[1.5rem] text-center">Pet Insurance B2C Journey</h3>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div className="w-full mb-40 -mr-28 flex justify-start">
+          {openPanel === 1 ? <DesignDetails details={designDetails.car} /> : null}
+          {openPanel === 2 ? <DesignDetails details={designDetails.travel} /> : null}
+          {openPanel === 3 ? <DesignDetails details={designDetails.pet} /> : null}
         </div>
       </div>
     </section>

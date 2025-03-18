@@ -65,26 +65,6 @@ export default function Menu({
 
   return (
     <div className="xs:fixed lg:static w-full h-fit xs:z-20 lg:z-0">
-      {/* <div
-        className={`${scrollStylesHamMenu} xs:block lg:hidden fixed top-2 right-0 z-30 ham-menu w-fit p-6 py-4 rounded-full rounded-r-none transition-all duration-200`}
-      >
-        <input
-          ref={checkboxRef}
-          onChange={toggleHamMenu}
-          type="checkbox"
-          id="checkbox4"
-          className="checkbox4 visuallyHidden"
-        />
-        <label htmlFor="checkbox4">
-          <div className="hamburger hamburger4">
-            <span className="bar bar1"></span>
-            <span className="bar bar2"></span>
-            <span className="bar bar3"></span>
-            <span className="bar bar4"></span>
-            <span className="bar bar5"></span>
-          </div>
-        </label>
-      </div> */}
       <nav className="h-fit lg:bg-gradient-to-r from-white to-transparent xs:min-h-[100vh] lg:min-h-screen w-80 pb-12 pt-12 lg:px-4 xs:z-60 lg:z-10 xs:absolute flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-12 lg:gap-12 transition-all duration-200">
             <Link
               to="/"
@@ -98,12 +78,12 @@ export default function Menu({
           <li
             ref={dropdownRef}
             onClick={handleDropdown}
-            className={`group relative p-2 text-[1rem] cursor-pointer flex gap-2 items-center hover:text-orange uppercase`}
+            className={`group relative p-2 text-[1rem] cursor-pointer flex gap-2 items-center  uppercase`}
           >
-            <span>{t("menuWorks")}</span>
+            <span className="hover:text-orange transition-all duration-200">{t("menuWorks")}</span>
             <i className={`${
-              isDropdownOpen ? "fa-angle-up" : "fa-angle-down"
-            } fa-solid`}></i>
+              isDropdownOpen ? "fa-angle-up text-orange" : "fa-angle-down"
+            } fa-solid transition-all duration-200`}></i>
             <ul
             className={`${
               isDropdownOpen ? "opacity-100 translate-x-24" : "opacity-0 -translate-x-24"
@@ -112,7 +92,7 @@ export default function Menu({
             <li>
               <Link
                 className={` ${isDropdownOpen ? "opacity-100" : "opacity-0"} w-full inline-block p-2 indent-4 hover:text-orange text-[1rem] uppercase group-hover:text-dark group-hover:hover:text-orange transition-all duration-400`}
-                to="/ui-ux"
+                to="/design"
               >
                 {t("subMenuUI")}
               </Link>
@@ -136,7 +116,7 @@ export default function Menu({
           </li>
           <li className={`${
               isDropdownOpen ? "translate-y-36" : "translate-y-0"
-            } relative p-2 text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-700`}>
+            } relative p-2 text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-200`}>
             <Link to="/about" className="inline-block">{t("menuAbout")}</Link>
           </li>
           <li
@@ -145,11 +125,41 @@ export default function Menu({
             }}
             className={`${
               isDropdownOpen ? "translate-y-36" : "translate-y-0"
-            } relative p-2 text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-700`}
+            } relative p-2 text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-200`}
           >
             {t("menuContact")}
           </li>
-          {/* <li className="flex justify-end gap-2 pl-1 text-[1rem] mx-[0.2rem] ">
+        </ul>
+      </nav>
+    </div>
+  );
+}
+
+{
+  /* <select
+              defaultValue={"en"}
+              onChange={onChangeLang}
+              className="xs:text-2xl lg:text-lg cursor-pointer menu-item outline-none border-none bg-transparent "
+            >
+              {LANGUAGES.map(({ code }) => (
+                <option key={code} value={code} className="bg-transparent">
+                  {code}
+                </option>
+              ))}
+            </select> */
+}
+
+
+// <ul
+//   className={`${scrollStylesUl} ${
+//     isMenuOpen
+//       ? "xs:translate-y-0 xs:pt-20 lg:pt-0"
+//       : "xs:-translate-y-[100vh] lg:translate-y-0"
+//   } xs:min-h-[100vh] lg:min-h-16 w-full pt-12 lg:px-4 xs:z-60 lg:z-10 xs:absolute flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-12 lg:gap-4 transition-all duration-200`}
+// ></ul>
+
+
+{/* <li className="flex justify-end gap-2 pl-1 text-[1rem] mx-[0.2rem] ">
             <div onClick={()=>{setLangSelected("es");setLanguage()}} className="flex justify-center items-center gap-2 after:content-['•'] after:w-2 after:h-full">
               <input
                 className="hidden peer"
@@ -187,31 +197,24 @@ export default function Menu({
               </label>
             </div>
           </li> */}
-        </ul>
-      </nav>
-    </div>
-  );
-}
 
-{
-  /* <select
-              defaultValue={"en"}
-              onChange={onChangeLang}
-              className="xs:text-2xl lg:text-lg cursor-pointer menu-item outline-none border-none bg-transparent "
-            >
-              {LANGUAGES.map(({ code }) => (
-                <option key={code} value={code} className="bg-transparent">
-                  {code}
-                </option>
-              ))}
-            </select> */
-}
-
-
-// <ul
-//   className={`${scrollStylesUl} ${
-//     isMenuOpen
-//       ? "xs:translate-y-0 xs:pt-20 lg:pt-0"
-//       : "xs:-translate-y-[100vh] lg:translate-y-0"
-//   } xs:min-h-[100vh] lg:min-h-16 w-full pt-12 lg:px-4 xs:z-60 lg:z-10 xs:absolute flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-12 lg:gap-4 transition-all duration-200`}
-// ></ul>
+          {/* <div
+        className={`${scrollStylesHamMenu} xs:block lg:hidden fixed top-2 right-0 z-30 ham-menu w-fit p-6 py-4 rounded-full rounded-r-none transition-all duration-200`}
+      >
+        <input
+          ref={checkboxRef}
+          onChange={toggleHamMenu}
+          type="checkbox"
+          id="checkbox4"
+          className="checkbox4 visuallyHidden"
+        />
+        <label htmlFor="checkbox4">
+          <div className="hamburger hamburger4">
+            <span className="bar bar1"></span>
+            <span className="bar bar2"></span>
+            <span className="bar bar3"></span>
+            <span className="bar bar4"></span>
+            <span className="bar bar5"></span>
+          </div>
+        </label>
+      </div> */}

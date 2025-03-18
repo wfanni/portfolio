@@ -1,0 +1,22 @@
+{
+
+    "car": {
+        "title": "Car Insurance B2C Journey",
+        "desc": "desciption",
+        "img1": "src/assets/car-ui.svg"
+    },
+    "travel": {
+        "title": "Travel Insurance B2C Journey",
+        "desc": "desciption",
+        "img1": "src/assets/travel-ui.png"
+    },
+    "pet": {
+        "title": "Pet Insurance B2C Journey",
+        "desc": "desciption",
+        "img1": "src/assets/pet-ui1.png",
+        "img2": "src/assets/pet-ui2.png",
+        "img3": "src/assets/pet-ui3.png"
+
+    }
+
+}
