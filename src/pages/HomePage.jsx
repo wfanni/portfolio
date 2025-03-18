@@ -16,7 +16,6 @@ export default function HomePage({ sections, lang, changeLanguage, selectedLangg
       <Intro selectedLanguage={selectedLangguage} />
       <About ref={sections.about} lang={lang} />
         <Skills ref={sections.skills} />
-        <Design ref={sections.design} />
         {/* <Projects
           ref={sections.projects}
           feedbackRef={sections.contact}

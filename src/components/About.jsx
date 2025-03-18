@@ -10,8 +10,7 @@ const About = forwardRef(function About({ lang }, ref) {
   return (
     <section
       ref={ref}
-      className="h-fit w-3/4 mx-auto flex flex-col justify-center items-start gap-12"
-    >
+      className="h-fit w-2/3 ml-auto mr-28 flex flex-col justify-end items-start gap-12">
       <h2 className="text-[3rem] font-abril">{t("aboutTitle")}</h2>
       <div className="flex justify-start items-center lg:gap-24 xs:gap-12 xs:flex-col-reverse lg:flex-row">
         <div className="xs:w-4/5 lg:w-3/4 text-justify flex flex-col gap-4">

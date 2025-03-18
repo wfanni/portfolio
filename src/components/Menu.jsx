@@ -62,10 +62,10 @@ export default function Menu({
       checkboxRef.current.click();
     }
   }
-
+  console.log(scrollPosition);
   return (
-    <div className="xs:fixed lg:static w-full h-fit xs:z-20 lg:z-0">
-      <nav className="h-fit lg:bg-gradient-to-r from-white to-transparent xs:min-h-[100vh] lg:min-h-screen w-80 pb-12 pt-12 lg:px-4 xs:z-60 lg:z-10 xs:absolute flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-12 lg:gap-12 transition-all duration-200">
+    <div className={`fixed h-screen w-80 bg-gradient-to-r from-white to-transparent z-1 top-0 left-0`}>
+      <nav className={`pb-12 pt-28 lg:px-4 xs:absolute flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-12 lg:gap-12 transition-all duration-200`}>
             <Link
               to="/"
               className="xs:hidden lg:block w-20 z-10 ml-6 hover:scale-110 transition-all duration-200"
@@ -73,7 +73,7 @@ export default function Menu({
               <img src={logo} alt="wfanni logo" />
             </Link>
         <ul
-          className={`h-fit xs:min-h-[120vh] sm:min-h-[90vh] w-fit lg:px-4 xs:z-60 lg:z-10 xs:absolute lg:static flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-4 transition-all duration-200`}
+          className={`h-fit w-fit lg:px-4 xs:z-60 lg:z-10 xs:absolute lg:static flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-4 transition-all duration-200`}
         >
           <li
             ref={dropdownRef}

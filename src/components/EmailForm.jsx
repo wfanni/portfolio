@@ -70,7 +70,7 @@ export default function EmailForm() {
           className="w-full min-h-[135px] border-2 border-orange rounded-xl outline-0 indent-2 py-1 hover:border-4 active:border-4 focus:border-4 transition-all duration-200"
         />
         <button
-          className="w-fit py-2 px-10 text-black bg-orange/40 shadow-xl rounded-3xl hover:bg-orange hover:text-white hover:shadow-md transition-all duration-200"
+          className="w-full py-2 px-10 text-black bg-orange/40 shadow-xl rounded-xl hover:bg-orange hover:text-white hover:shadow-md transition-all duration-200"
           type="submit"
         >
           {t("formSubmit")}

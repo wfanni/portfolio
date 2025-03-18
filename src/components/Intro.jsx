@@ -32,7 +32,7 @@ export default function Intro() {
   }, []);
 
   return (
-    <section className="relative bg-intro xs:bg-cover lg:bg-[length:150%] bg-no-repeat xs:bg-[center_bottom_-15rem] lg:bg-[center_top_-10rem] xs:h-[100vh] sm:h-[120vh] after:content-[''] after:absolute after:w-full after:h-60 after:bottom-0 after:bg-gradient-to-t after:from-white after:to-transparentrelative flex flex-col items-end justify-start">
+    <section className="relative z-[-1] bg-intro xs:bg-cover lg:bg-[length:150%] bg-no-repeat xs:bg-[center_bottom_-15rem] lg:bg-[center_top_-10rem] xs:h-[100vh] sm:h-[120vh] after:content-[''] after:absolute after:w-full after:h-60 after:bottom-0 after:bg-gradient-to-t after:from-white after:to-transparentrelative flex flex-col items-end justify-start">
       <div className="relative w-fit font-normal flex flex-col top-24 -left-10 gap-10">
         <h1 className="relative w-[60vw] flex flex-col items-start justify-start">
           <span className="w-fit top-4 xs:text-[2.25rem] sm:text-[1.6rem] flex flex-col items-start ">

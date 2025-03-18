@@ -14,11 +14,10 @@ const Design = forwardRef(function Design({}, ref) {
   return (
     <section
       ref={ref}
-      className="min-h-screen h-fit w-full  flex flex-col justify-center items-end"
-    >
+      className="min-h-screen h-fit w-full  flex flex-col justify-center items-end">
       <div className="w-2/3 mr-60 flex flex-col gap-20 justify-start items-center">
         <div className="w-full flex flex-col justify-center items-center ">
-          <img src={design} className="w-full -mt-24 -mr-28"/>
+          <img src={design} className="w-full -mt-16 -mr-28"/>
           <h2 className="w-fit -mr-24 -mt-8 xs:text-[2rem] sm:text-[3rem]  uppercase">
             UI/UX Design & Development
           </h2>

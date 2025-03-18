@@ -62,6 +62,7 @@ export default function App() {
           path="/"
           element={
             <HomePage
+              scrollPoz={scrollY}
               sections={sectionsContainer}
               lang={langCode}
               changeLanguage={onChangeLang}
