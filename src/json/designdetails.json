@@ -2,17 +2,23 @@
 
     "car": {
         "title": "Car Insurance B2C Journey",
-        "desc": "desciption",
+        "desc": "In this project I got a document from the client showcasing some designs they like. I reviewed the ideas and merged some together, while still making sure the design can be implemented in our platform.",
+        "desc2": "This is a general car insurance journey, where the user can add their car's info, their personal info, and get an insurance plan depending on the given data.",
+        "desc3": "Unfortunately I can only show the original design blurred, but even this way you can see I shortened the form to make it easier to use.",
         "img1": "src/assets/car-ui.png"
     },
     "travel": {
         "title": "Travel Insurance B2C Journey",
-        "desc": "desciption",
+        "desc": "For this project I had to design a Travel and a Home insurance process for a B2C application. Both journeys are very similar in design, and I decided to show Travel.",
+        "desc2": "This is also a pretty simple app, separating the the form into smaller steps, where the user can add personal info, data about the trip itself and get a personalized plan at the end.",
+        "desc3": "I had to take into consideration the special platform we are using for development and also the client's exisiting apps and brand identity.",
         "img1": "src/assets/travel-ui.png"
     },
     "pet": {
         "title": "Pet Insurance B2C Journey",
-        "desc": "desciption",
+        "desc": "This project is very close to my heart, it was one of the first design project I got. I'm very proud of it in general, but especially, because I put it together on a weekend, and the client chose my design over an actual design company's suggestion.",
+        "desc2": "I also created a prototype for this one, and implemented the design myself. I really loved the topic of it as well, let's be honest, insurance can be boring sometimes, but pets are fun!",
+        "desc3": "As you can already tell, I got some freedom in this project, compared to the others. I still had to make sure it's compatible with our environment.",
         "img1": "src/assets/pet-ui1.png",
         "img2": "src/assets/pet-ui2.png",
         "img3": "src/assets/pet-ui3.png"

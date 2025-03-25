@@ -2,8 +2,10 @@
 
     "ui": {
         "title": "UI/UX Design & Development",
-        "desc": "desciption",
-        "img1": ""
+        "desc": "A showcase of my UI design projects, where I translated client requests into functional and visually appealing interfaces. Most of these are for insurance related B2C applications. Some of the designs were created within the constraints of the platform we developed with, requiring creative problem-solving to balance usability, aesthetics, and technical limitations while meeting client expectations.",
+        "img1": "src/assets/car-insurance-design.png",
+        "img2": "src/assets/pet-ui1.png",
+        "img3": "src/assets/travel-ui-solo.png"
     },
     "photo": {
         "title": "Photography, Photo & Video Editing",

@@ -187,6 +187,20 @@ h1 {
   color: #ff5d30;
 }
 
+.slick-slider {
+  background-color: rgba(255, 93, 48, 0.1411764706);
+  margin: 0 !important;
+  padding: 1rem 0;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slick-arrow {
+  display: none !important;
+}
 .slick-arrow::before {
   color: #ff5d30;
   opacity: 1;

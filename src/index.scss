@@ -234,7 +234,18 @@ h1 {
 //   }
 }
 
+.slick-slider {
+  background-color:#ff5d3024;
+  margin: 0 !important;
+  padding: 1rem 0;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
 .slick-arrow {
+  display: none !important;
   &::before {
     color: #ff5d30;
     opacity: 1;
