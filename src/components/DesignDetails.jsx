@@ -1,7 +1,7 @@
-import { forwardRef, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const DesignDetails = forwardRef(function Design({ details }, ref) {
+export default function DesignDetails ({ details }) {
 
     return (
         <section className="panel-content flex flex-col gap-10">
@@ -25,6 +25,4 @@ const DesignDetails = forwardRef(function Design({ details }, ref) {
             
         </section>
     )
-});
-
-export default DesignDetails
+};

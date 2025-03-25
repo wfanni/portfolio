@@ -1,133 +1,63 @@
-import { useEffect, useRef, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { LANGUAGES } from "../constants/languages";
+import { useEffect,  useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { changeLanguage } from "i18next";
 import logo from "../assets/myLogo2025_white.svg";
 
 export default function Menu({
   scrollPosition,
-  sections,
-  changeLanguage,
-  lang,
   selectedLanguage
 }) {
-  const { i18n, t } = useTranslation();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [langSelected, setLangSelected] = useState("en");
-  const dropdownRef = useRef();
-  
-  useEffect(() => {
-    document.addEventListener("click", handleBlur, true);
-    return () => {
-      document.removeEventListener("click", handleBlur, true);
-    };
-  }, []);
+  const { t } = useTranslation();
+  const [isHomePage, setIsHomePage] = useState(false);
   
   function setLanguage() {
     langSelected === selectedLanguage;
     console.log(selectedLanguage)
   }
-  function handleBlur(e) {
-    if (dropdownRef && !dropdownRef.current.contains(e.target)) {
-      setIsDropdownOpen(false);
+
+  function isItHomePage() {
+    if (window.location.href === "http://localhost:5173/#/") {
+      setIsHomePage(true);
     }
-  }
-  function handleDropdown() {
-    setIsDropdownOpen((prev) => !prev);
-  }
-
-  const checkboxRef = useRef();
-  // let scrollStylesUl = "";
-  // let scrollStylesHamMenu = "";
-  // if (scrollY === 0) {
-  //   scrollStylesUl = "lg:bg-transparent xs:bg-white/90";
-  //   scrollStylesHamMenu = "bg-transparent";
-  // } else {
-  //   scrollStylesUl = "lg:bg-white xs:bg-white/90 lg:shadow-lg";
-  //   scrollStylesHamMenu = "bg-white/50";
-  // }
-
-  function scrollToSection(section) {
-    section.current.scrollIntoView({ behavior: "smooth" });
+    else setIsHomePage(false);
+    console.log(isHomePage);
   }
 
   function toggleHamMenu() {
     setIsMenuOpen((prev) => !prev);
   }
 
-  function menuItemClick() {
-    if (checkboxRef.current) {
-      checkboxRef.current.click();
-    }
-  }
-  console.log(scrollPosition);
   return (
-    <div className={`fixed h-screen w-80 bg-gradient-to-r from-white to-transparent z-1 top-0 left-0`}>
-      <nav className={`pb-12 pt-28 lg:px-4 xs:absolute flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-12 lg:gap-12 transition-all duration-200`}>
+    <div className={`${scrollPosition === 0 && isHomePage ? "bg-opacity-0 text-white" : "bg-opacity-100 bg-gradient-to-r from-white via-white/60 to-transparent text-dark"} fixed h-screen pt-8 w-52 z-10 top-0 left-0 transition-all duration-200`}>
+      <nav className={`py-4 h-fit lg:px-4 xs:absolute flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-12 lg:gap-4 transition-all duration-200`}>
             <Link
+              onClick={isItHomePage}
               to="/"
-              className="xs:hidden lg:block w-20 z-10 ml-6 hover:scale-110 transition-all duration-200"
+              className="xs:hidden lg:block w-20 z-10 ml-4 hover:scale-110 transition-all duration-200"
             >
               <img src={logo} alt="wfanni logo" />
             </Link>
         <ul
-          className={`h-fit w-fit lg:px-4 xs:z-60 lg:z-10 xs:absolute lg:static flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-4 transition-all duration-200`}
+          className={`relative h-fit w-fit pl-6 flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-2 transition-all duration-200`}
         >
-          <li
-            ref={dropdownRef}
-            onClick={handleDropdown}
-            className={`group relative p-2 text-[1rem] cursor-pointer flex gap-2 items-center  uppercase`}
+          <li className={`menu-link relative text-[1rem] cursor-pointer flex gap-2 items-center uppercase`}
           >
-            <span className="hover:text-orange transition-all duration-200">{t("menuWorks")}</span>
-            <i className={`${
-              isDropdownOpen ? "fa-angle-up text-orange" : "fa-angle-down"
-            } fa-solid transition-all duration-200`}></i>
-            <ul
-            className={`${
-              isDropdownOpen ? "opacity-100 translate-x-24" : "opacity-0 -translate-x-24"
-            } absolute top-10 -left-20 min-w-40 flex flex-col gap-4 transition-all duration-700 ease-in-out`}
-          >
-            <li>
-              <Link
-                className={` ${isDropdownOpen ? "opacity-100" : "opacity-0"} w-full inline-block p-2 indent-4 hover:text-orange text-[1rem] uppercase group-hover:text-dark group-hover:hover:text-orange transition-all duration-400`}
-                to="/design"
-              >
-                {t("subMenuUI")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={` ${isDropdownOpen ? "opacity-100" : "opacity-0"} w-full inline-block p-2 indent-4 hover:text-orange text-[1rem] uppercase group-hover:text-dark group-hover:hover:text-orange transition-all duration-400`}
-                to="/social-media"
-              >
-                {t("subMenuSocial")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={` ${isDropdownOpen ? "opacity-100" : "opacity-0"} w-full inline-block p-2 indent-4 hover:text-orange text-[1rem] uppercase group-hover:text-dark group-hover:hover:text-orange transition-all duration-400`}
-              >
-                {t("subMenuPhoto")}
-              </Link>
-            </li>
-            </ul>
+          <Link 
+            onClick={isItHomePage}
+            to="/works"
+            className="inline-block">{t("menuWorks")}</Link>
           </li>
-          <li className={`${
-              isDropdownOpen ? "translate-y-36" : "translate-y-0"
-            } relative p-2 text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-200`}>
-            <Link to="/about" className="inline-block">{t("menuAbout")}</Link>
+          <li className={`menu-link relative text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-200`}>
+            <Link 
+              onClick={isItHomePage}
+              to="/about" 
+              className="inline-block">{t("menuAbout")}</Link>
           </li>
-          <li
-            onClick={() => {
-              scrollToSection(sections.contact), menuItemClick();
-            }}
-            className={`${
-              isDropdownOpen ? "translate-y-36" : "translate-y-0"
-            } relative p-2 text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-200`}
-          >
-            {t("menuContact")}
+          <li className={`menu-link relative text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-200`}>
+            <Link 
+              onClick={isItHomePage}
+              to="/contact"
+              className="inline-block">{t("menuContact")}</Link>
           </li>
         </ul>
       </nav>

@@ -1,16 +1,17 @@
 import Design from "../components/Design";
+import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 
-export default function DesignPage({ sections, lang, changeLanguage }) {
+export default function DesignPage({ lang, changeLanguage }) {
   return (
-    <>
+    <div className="relative">
       <Menu
         scrollPosition={scrollY}
-        sections={sections}
         changeLanguage={changeLanguage}
         lang={lang}
       />
       <Design />
-    </>
+      <Footer />
+    </div>
   );
 }

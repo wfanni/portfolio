@@ -159,6 +159,25 @@ h1 {
     background-color: transparent; 
 }
 
+.menu-link {
+  margin-bottom: 1rem;
+  > a {
+    color: #20063b;
+    text-decoration: none;
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1.5px;
+        background: #ff5d30;
+        transition: width .3s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
 .menu-item {
   // display: inline-block;
   position: relative;

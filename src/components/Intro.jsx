@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
-// import designer from "../assets/designer-hero1.png";
+import hero from "../assets/laptop-hero2.png";
 
 export default function Intro() {
   const { i18n, t } = useTranslation();
@@ -32,8 +32,9 @@ export default function Intro() {
   }, []);
 
   return (
-    <section className="relative z-[-1] bg-intro xs:bg-cover lg:bg-[length:150%] bg-no-repeat xs:bg-[center_bottom_-15rem] lg:bg-[center_top_-10rem] xs:h-[100vh] sm:h-[120vh] after:content-[''] after:absolute after:w-full after:h-60 after:bottom-0 after:bg-gradient-to-t after:from-white after:to-transparentrelative flex flex-col items-end justify-start">
-      <div className="relative w-fit font-normal flex flex-col top-24 -left-10 gap-10">
+    <section className="relative z-[-1] bg-white xs:bg-cover lg:bg-[length:150%] bg-no-repeat xs:bg-[center_bottom_-15rem] lg:bg-[center_top_-10rem] xs:h-[100vh] sm:h-[120vh] after:content-[''] after:absolute after:w-full after:h-60 after:bottom-0 after:bg-gradient-to-t after:from-white after:to-transparentrelative flex flex-col items-end justify-start">
+      <img src={hero} className="absolute right-20 z-[-1] scale-150 object-bottom overflow-hidden max-h-full" />
+      <div className="relative w-fit font-normal flex flex-col top-32 -left-4 gap-10">
         <h1 className="relative w-[60vw] flex flex-col items-start justify-start">
           <span className="w-fit top-4 xs:text-[2.25rem] sm:text-[1.6rem] flex flex-col items-start ">
             <span className="block font-abril text-[2.5rem]">{t("introHello1")}</span>

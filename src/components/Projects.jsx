@@ -1,13 +1,11 @@
-import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import preview from "../assets/preview.png";
 import ClientShowcase from "./ClientShowcase";
 
-const Projects = forwardRef(function Projects({ feedbackRef, lang }, ref) {
+export default Projects = function Projects({ feedbackRef, lang }) {
   const { t } = useTranslation();
   return (
     <section
-      ref={ref}
       className="bg-projects xs:bg-cover lg:bg-[length:100%] bg-no-repeat xs:bg-[left_top_-7rem] lg:bg-top min-h-screen h-fit pt-16 w-full flex flex-col justify-center items-center gap-12"
     >
       <h2 className="text-[3rem] uppercase">{t("projectsTitle")}</h2>
@@ -65,6 +63,4 @@ const Projects = forwardRef(function Projects({ feedbackRef, lang }, ref) {
       </section>
     </section>
   );
-});
-
-export default Projects;
+};

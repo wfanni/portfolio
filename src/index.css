@@ -157,6 +157,25 @@ h1 {
   background-color: transparent;
 }
 
+.menu-link {
+  margin-bottom: 1rem;
+}
+.menu-link > a {
+  color: #20063b;
+  text-decoration: none;
+}
+.menu-link > a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: #ff5d30;
+  transition: width 0.3s;
+}
+.menu-link > a:hover::after {
+  width: 100%;
+}
+
 .menu-item {
   position: relative;
   padding: 0.5rem 1rem 0.3rem;

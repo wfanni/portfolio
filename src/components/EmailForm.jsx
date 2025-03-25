@@ -39,7 +39,7 @@ export default function EmailForm() {
       });
   }
   return (
-    <div className="-mt-28 flex flex-col gap-10">
+    <div className="mt-28 ml-[8.5rem] w-2/3 flex flex-col gap-10">
       <h2 className="font-normal w-full">{t("contactFormComment")}</h2>
       <form
         onSubmit={(e) => handleEmailSubmmit(e)}

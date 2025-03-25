@@ -1,0 +1,22 @@
+{
+
+    "ui": {
+        "title": "UI/UX Design & Development",
+        "desc": "desciption",
+        "img1": ""
+    },
+    "photo": {
+        "title": "Photography, Photo & Video Editing",
+        "desc": "desciption",
+        "img1": ""
+    },
+    "social": {
+        "title": "Social Media Content Creation & Marketing",
+        "desc": "desciption",
+        "img1": "",
+        "img2": "",
+        "img3": ""
+
+    }
+
+}

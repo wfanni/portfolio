@@ -11,23 +11,14 @@ import AboutPage from "./pages/AboutPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import EducationPage from "./pages/EducationPage";
 import DesignPage from "./pages/DesignPage";
+import WorksPage from "./pages/WorksPage";
+import PhotoPage from "./pages/PhotoPage";
+import SocialPage from "./pages/SocialPage";
+import ContactPage from "./pages/ContactPage";
+
 
 export default function App() {
   const [scrollY, setScrollY] = useState(window.scrollY);
-
-  const aboutRef = useRef();
-  const skillsRef = useRef();
-  const projectsRef = useRef();
-  const contactRef = useRef();
-  const designRef = useRef();
-
-  const sectionsContainer = {
-    about: aboutRef,
-    skills: skillsRef,
-    projects: projectsRef,
-    contact: contactRef,
-    design: designRef,
-  };
 
   const [langCode, setLangCode] = useState("en");
 
@@ -38,17 +29,6 @@ export default function App() {
   const onChangeLang = (e) => {
     setLangCode(e.target.value);
   };
-
-  function onScroll() {
-    setScrollY(window.scrollY);
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
 
   function backToTop() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -63,7 +43,6 @@ export default function App() {
           element={
             <HomePage
               scrollPoz={scrollY}
-              sections={sectionsContainer}
               lang={langCode}
               changeLanguage={onChangeLang}
             />
@@ -73,7 +52,6 @@ export default function App() {
           path="/about"
           element={
             <AboutPage
-              sections={sectionsContainer}
               lang={langCode}
               changeLanguage={onChangeLang}
             />
@@ -83,7 +61,42 @@ export default function App() {
           path="/design"
           element={
             <DesignPage
-              sections={sectionsContainer}
+              lang={langCode}
+              changeLanguage={onChangeLang}
+            />
+          }
+        />
+        <Route
+          path="/photography"
+          element={
+            <PhotoPage
+              lang={langCode}
+              changeLanguage={onChangeLang}
+            />
+          }
+        />
+        <Route
+          path="/social-media-content-creation"
+          element={
+            <SocialPage
+              lang={langCode}
+              changeLanguage={onChangeLang}
+            />
+          }
+        />
+        <Route
+          path="/works"
+          element={
+            <WorksPage
+              lang={langCode}
+              changeLanguage={onChangeLang}
+            />
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <ContactPage
               lang={langCode}
               changeLanguage={onChangeLang}
             />
@@ -93,7 +106,6 @@ export default function App() {
           path="/experience"
           element={
             <ExperiencePage
-              sections={sectionsContainer}
               lang={langCode}
               changeLanguage={onChangeLang}
             />
@@ -103,7 +115,6 @@ export default function App() {
           path="/education"
           element={
             <EducationPage
-              sections={sectionsContainer}
               lang={langCode}
               changeLanguage={onChangeLang}
             />
