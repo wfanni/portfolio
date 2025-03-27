@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-export default function About ({ lang }) {
+export default function About ({ lang, pathname }) {
   const { t } = useTranslation();
   return (
     <section

@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 import hero from "../assets/laptop-hero2.png";
 
-export default function Intro() {
+export default function Intro({ pathname }) {
   const { i18n, t } = useTranslation();
   const typingText = useRef();
   useEffect(() => {

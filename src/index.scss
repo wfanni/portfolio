@@ -176,6 +176,9 @@ h1 {
       width: 100%;
     }
   }
+  &.selected > a::after {
+    width: 100%;
+  }
 }
 
 .menu-item {
@@ -239,10 +242,26 @@ h1 {
   margin: 0 !important;
   padding: 1rem 0;
 }
-
 .slick-track {
   display: flex;
   align-items: center;
+}
+.slick-dots {
+  width: fit-content;
+  left: calc(50% + 60px);
+  bottom: -2.5rem;
+  li {
+    button {
+      &::before {
+        font-size: 15px;
+        color: #ff5d30;
+      }
+    }
+    &.slick-active button::before {
+      color: #ff5d30;
+      opacity: 1;
+    }
+  }
 }
 .slick-arrow {
   display: none !important;

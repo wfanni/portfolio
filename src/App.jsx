@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
 import { useEffect, useState, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import Loading from "./components/Loading";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -15,10 +16,13 @@ import WorksPage from "./pages/WorksPage";
 import PhotoPage from "./pages/PhotoPage";
 import SocialPage from "./pages/SocialPage";
 import ContactPage from "./pages/ContactPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 export default function App() {
   const [scrollY, setScrollY] = useState(window.scrollY);
+  const {pathname} = useLocation();
+  console.log(pathname);
 
   const [langCode, setLangCode] = useState("en");
 
@@ -36,6 +40,7 @@ export default function App() {
 
   return (
     <Suspense fallback={<Loading />}>
+      <ScrollToTop pathname={pathname} />
       <Routes>
         <Route
           exact
@@ -45,6 +50,7 @@ export default function App() {
               scrollPoz={scrollY}
               lang={langCode}
               changeLanguage={onChangeLang}
+              pathname={pathname}
             />
           }
         />
@@ -54,33 +60,37 @@ export default function App() {
             <AboutPage
               lang={langCode}
               changeLanguage={onChangeLang}
+              pathname={pathname}
             />
           }
         />
         <Route
-          path="/design"
+          path="/works/design"
           element={
             <DesignPage
               lang={langCode}
               changeLanguage={onChangeLang}
+              pathname={pathname}
             />
           }
         />
         <Route
-          path="/photography"
+          path="/works/photography"
           element={
             <PhotoPage
               lang={langCode}
               changeLanguage={onChangeLang}
+              pathname={pathname}
             />
           }
         />
         <Route
-          path="/social-media-content-creation"
+          path="/works/social-media-content-creation"
           element={
             <SocialPage
               lang={langCode}
               changeLanguage={onChangeLang}
+              pathname={pathname}
             />
           }
         />
@@ -90,6 +100,7 @@ export default function App() {
             <WorksPage
               lang={langCode}
               changeLanguage={onChangeLang}
+              pathname={pathname}
             />
           }
         />
@@ -99,6 +110,7 @@ export default function App() {
             <ContactPage
               lang={langCode}
               changeLanguage={onChangeLang}
+              pathname={pathname}
             />
           }
         />
@@ -108,6 +120,7 @@ export default function App() {
             <ExperiencePage
               lang={langCode}
               changeLanguage={onChangeLang}
+              pathname={pathname}
             />
           }
         />
@@ -117,6 +130,7 @@ export default function App() {
             <EducationPage
               lang={langCode}
               changeLanguage={onChangeLang}
+              pathname={pathname}
             />
           }
         />        

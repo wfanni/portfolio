@@ -1,12 +1,16 @@
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import ui from "../assets/ui-ux-card.svg";
 import social from "../assets/social-card.svg";
 import photo from "../assets/photo-card.svg";
 import { Link } from "react-router-dom";
+import WorkDetails from "./WorkDetails";
+import workDetails from "../json/workdetails.json";
 
-
-export default function Skills () {
+export default function HomeWorks ({ pathname }) {
   const { t } = useTranslation();
+  const [openPanel, setOpenPanel]= useState(0);
+
 
   return (
     <section
@@ -16,7 +20,7 @@ export default function Skills () {
         <h2 className="text-[2rem]">{t("CTATitle")}</h2>
         <div className="xs:w-4/5 lg:w-full mx-auto flex justify-between items-center xs:flex-col lg:flex-row xs:gap-16 lg:gap-0">
           <div className="w-full flex items-center justify-between xs:gap-8 lg:gap-12">
-            <Link to="/design">
+            <Link onClick={() => setOpenPanel(1)}>
               <div className="group relative overflow-hidden min-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end justify-center transition-all duration-200">
                 <div className="max-h-32 absolute top-0 w-full h-fit ">
                   <img src={ui} className="absolute -top-2 -right-28 scale-[180%] opacity-50 group-hover:opacity-100 transition-all duration-200"/>
@@ -26,7 +30,7 @@ export default function Skills () {
                 </div>
               </div>
             </Link>
-            <Link to="/photography">
+            <Link onClick={() => setOpenPanel(2)}>
               <div className="group relative overflow-hidden min-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end justify-center transition-all duration-200">
                 <div className="max-h-32 absolute top-0 w-full h-fit ">
                   <img src={photo} className="absolute -top-4 right-0 scale-[100%] -rotate-3 opacity-50 group-hover:opacity-100 transition-all duration-200"/>
@@ -36,7 +40,7 @@ export default function Skills () {
                 </div>
               </div>
             </Link>
-            <Link to="/social-media-content-creation">
+            <Link onClick={() => setOpenPanel(3)}>
               <div className="group relative overflow-hidden min-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end justify-center transition-all duration-200">
                 <div className="max-h-32 absolute top-0 w-full h-fit ">
                   <img src={social} className="absolute -top-6 right-0 scale-[100%] -rotate-3 opacity-50 group-hover:opacity-100 transition-all duration-200"/>
@@ -47,6 +51,11 @@ export default function Skills () {
               </div>
               </Link>
           </div>
+        </div>
+        <div className="w-full mb-40 -mr-28 flex justify-start">
+            {openPanel === 1 ? <WorkDetails link="uiWorks" details={workDetails.ui} openPanel={1} pathname={pathname} /> : null}
+            {openPanel === 2 ? <WorkDetails link="photoWorks" details={workDetails.photo} openPanel={2} pathname={pathname} /> : null}
+            {openPanel === 3 ? <WorkDetails link="socialWorks" details={workDetails.social} openPanel={3} pathname={pathname} /> : null}
         </div>
       </div>
     </section>

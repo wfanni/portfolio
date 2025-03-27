@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  assetsInclude: ['**/*.PNG', "**/*.JPG"],
+  assetsInclude: ['**/*.PNG', "**/*.JPG", "**/*.HEIC"],
   base: './',
   resolve: {
     alias: {

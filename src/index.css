@@ -175,6 +175,9 @@ h1 {
 .menu-link > a:hover::after {
   width: 100%;
 }
+.menu-link.selected > a::after {
+  width: 100%;
+}
 
 .menu-item {
   position: relative;
@@ -196,6 +199,21 @@ h1 {
 .slick-track {
   display: flex;
   align-items: center;
+}
+
+.slick-dots {
+  width: -moz-fit-content;
+  width: fit-content;
+  left: calc(50% + 60px);
+  bottom: -2.5rem;
+}
+.slick-dots li button::before {
+  font-size: 15px;
+  color: #ff5d30;
+}
+.slick-dots li.slick-active button::before {
+  color: #ff5d30;
+  opacity: 1;
 }
 
 .slick-arrow {

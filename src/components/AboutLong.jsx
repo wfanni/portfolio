@@ -4,7 +4,7 @@ import cvEN from '../assets/CV-Fanni-Wihl-ENG.pdf';
 import cvES from '../assets/CV-Fanni-Wihl-ES.pdf';
 
 
-export default function AboutLong ({lang}) {
+export default function AboutLong ({ lang, pathname }) {
   const { t } = useTranslation();
     return (
         <section className="min-h-screen h-fit py-16 flex flex-col justify-center items-center gap-12">

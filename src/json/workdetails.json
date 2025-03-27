@@ -2,23 +2,17 @@
 
     "ui": {
         "title": "UI/UX Design & Development",
-        "desc": "A showcase of my UI design projects, where I translated client requests into functional and visually appealing interfaces. Most of these are for insurance related B2C applications. Some of the designs were created within the constraints of the platform we developed with, requiring creative problem-solving to balance usability, aesthetics, and technical limitations while meeting client expectations.",
-        "img1": "src/assets/car-insurance-design.png",
-        "img2": "src/assets/pet-ui1.png",
-        "img3": "src/assets/travel-ui-solo.png"
+        "desc": "A showcase of my UI design projects, where I translated client requests into functional and visually appealing interfaces. Most of these are for insurance related B2C applications. Some of the designs were created within the constraints of the platform we developed with, requiring creative problem-solving to balance usability, aesthetics, and technical limitations while meeting client expectations."
     },
     "photo": {
         "title": "Photography, Photo & Video Editing",
-        "desc": "desciption",
-        "img1": ""
+        "desc": "My passion for photography started early, it came with my passion for travelling. I loved taking pictures of beautiful places and with time I learnt what I should be looking out for when taking photos. I like to capture symmetry, but also interesting compositions and showing the vibe of place I'm at. I also like food, street and architecture photography.",
+        "desc2": "Smart phones took over the world of photography, I do take most of my pictures with an iPhone. You can see some photos taken with a Canon camera, and I also got into film photography with an old Soviet camera I found around the house."
     },
     "social": {
         "title": "Social Media Content Creation & Marketing",
-        "desc": "desciption",
-        "img1": "",
-        "img2": "",
-        "img3": ""
-
+        "desc": "My marketing journey started in a travel agency, where I worked as a Marketing Assistant. My position included setting up and managing PPC campaigns in Google and Facebook Ads. I had to one coming up with and design the visuals for the ads as well. I also had the opportunity to participate in two Google Ads courses during my time there. I took care of multiple travel related website's content, updating landing pages and offer prices.",
+        "desc2": "Actual content creation came a little later, although I always loved taking photos and videos for social media. I started creating travel related reels for Instagram and Tiktok in the beginning of 2024. Since then, I'm constantly learning more and more about what to capture and how, and also about editing. I feel like I'm full of ideas and excited to create every and each one of my videos."
     }
 
 }

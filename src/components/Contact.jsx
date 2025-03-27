@@ -3,7 +3,7 @@ import EmailForm from "./EmailForm";
 import contact from "../assets/contact.svg";
 import iphone from "../assets/iphone-mockup-2.svg";
 
-export default function Contact ({}) {
+export default function Contact ({ pathname }) {
   const { t } = useTranslation();
   return (
     <section

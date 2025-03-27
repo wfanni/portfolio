@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import designDetails from "../json/designdetails.json";
-import design from "../assets/uiux-hero.svg";
+import workDetails from "../json/workdetails.json";
+import photo from "../assets/photo-hero.svg";
 import carjourney from "../assets/car-design1.svg";
 import traveljourney from "../assets/travel-design4.svg";
 import petjourney from "../assets/pet-design3.svg";
-import DesignDetails from "./DesignDetails";
+import PhotoDetails from "./PhotoDetails";
 
-export default function Photography ({}) {
+export default function Photography ({ pathname }) {
   const { t } = useTranslation();
   const [openPanel, setOpenPanel]= useState(0);
   console.log(openPanel);
@@ -16,8 +16,8 @@ export default function Photography ({}) {
       className="min-h-screen h-fit w-full  flex flex-col justify-center items-end">
       <div className="w-2/3 mr-60 flex flex-col gap-20 justify-start items-center">
         <div className="w-full flex flex-col justify-center items-center ">
-          <img src={design} className="w-full -mt-16 -mr-28"/>
-          <h2 className="w-fit -mr-24 -mt-8 xs:text-[2rem] sm:text-[3rem] uppercase">
+          <img src={photo} className="w-full h-[580px] scale-[100%] object-cover -mt-0 -mr-28"/>
+          <h2 className="w-fit -mr-24 mt-2 xs:text-[2rem] sm:text-[3rem] uppercase">
             Photography, Photo & Video Editing
           </h2>
         </div>
@@ -54,9 +54,9 @@ export default function Photography ({}) {
           </article>
         </div>
         <div className="w-full mb-40 -mr-28 flex justify-start">
-          {openPanel === 1 ? <DesignDetails details={designDetails.car} /> : null}
-          {openPanel === 2 ? <DesignDetails details={designDetails.travel} /> : null}
-          {openPanel === 3 ? <DesignDetails details={designDetails.pet} /> : null}
+          {openPanel === 1 ? <PhotoDetails details={workDetails} /> : null}
+          {openPanel === 2 ? <PhotoDetails details={workDetails} /> : null}
+          {openPanel === 3 ? <PhotoDetails details={workDetails} /> : null}
         </div>
       </div>
     </section>
