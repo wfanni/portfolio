@@ -9,12 +9,12 @@ export default function HomePage({ lang, changeLanguage, selectedLangguage, path
   
   return (
     <div className="relative">
-      <Menu scrollPosition={scrollY} changeLanguage={changeLanguage} lang={lang} selectedLanguage={selectedLangguage} pathname={pathname}/>
+      <Menu scrollPosition={scrollY} changeLanguage={changeLanguage} lang={lang} selectedLanguage={selectedLangguage} pathname={pathname} />
       <Intro selectedLanguage={selectedLangguage} pathname={pathname} />
       <About lang={lang} pathname={pathname} />
-        <HomeWorks pathname={pathname}/>
-        <Contact pathname={pathname} />
-        <Footer pathname={pathname} />
+      <HomeWorks pathname={pathname} />
+      <Contact pathname={pathname} />
+      <Footer pathname={pathname} />
     </div>
   );
 }

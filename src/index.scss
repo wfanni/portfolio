@@ -236,6 +236,10 @@ h1 {
 //     }
 //   }
 }
+.slick-list {
+  width: 100vw;
+  margin-left: auto !important;
+}
 
 .slick-slider {
   background-color:#ff5d3024;
@@ -248,7 +252,7 @@ h1 {
 }
 .slick-dots {
   width: fit-content;
-  left: calc(50% + 60px);
+  left: calc(55% + 60px);
   bottom: -2.5rem;
   li {
     button {

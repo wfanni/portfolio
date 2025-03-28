@@ -1,5 +1,6 @@
 import Menu from "../components/Menu";
 import AboutLong from "../components/AboutLong";
+import Footer from "../components/Footer";
 
 export default function AboutPage({ lang, changeLanguage, pathname }) {
   return (
@@ -11,6 +12,7 @@ export default function AboutPage({ lang, changeLanguage, pathname }) {
         pathname={pathname}
       />
       <AboutLong pathname={pathname} />
+      <Footer pathname={pathname} />
     </>
   );
 }

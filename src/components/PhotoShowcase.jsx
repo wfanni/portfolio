@@ -1,13 +1,18 @@
 import Slider from "react-slick";
 
-import spain from "../assets/spain.JPG";
-import spain2 from "../assets/spain2.jpg";
+import spain from "../assets/spain5.jpg";
+import spain2 from "../assets/spain6.jpg";
 import switzerland from "../assets/switzerland.jpg";
 import switzerland2 from "../assets/switzerland2.jpg";
-import portugal from "../assets/portugal.jpg";
-import portugal2 from "../assets/spain4.jpg";
+import switzerland3 from "../assets/switzerland8.png";
+import portugal from "../assets/portugal3.png";
+import portugal2 from "../assets/portugal2.png";
+import portugal3 from "../assets/portugal8.png";
+import portugal4 from "../assets/portugal9.png";
 
-export default function PhotoShowcase() {
+
+
+export default function PhotoShowcase({ pathname }) {
   const settings = {
     dots: true,
     infinite: true,
@@ -35,35 +40,50 @@ export default function PhotoShowcase() {
   };
   return (
     <>
-      <Slider {...settings} className="max-w-full min-w-[133%] mb-4">
+      <Slider {...settings} className={`${pathname === "/works" ? "min-w-[100vw]" : "-right-16 min-w-[100vw]"} max-w-full mb-4`}>
         <div>
           <div className="min-h-[100px] flex justify-center items-center">
-            <img className="w-[400px] m-4 object-cover shadow-lg" src={spain} />
+            <img className="w-[300px] m-4 object-cover shadow-lg" src={spain} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[500px] m-4 object-cover shadow-lg" src={spain2} />
+            <img className="w-[300px] m-4 object-cover shadow-lg" src={spain2} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[400px] m-4 object-cover shadow-lg" src={switzerland} />
+            <img className="w-[300px] m-4 object-cover shadow-lg" src={switzerland} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[400px] m-4 object-cover shadow-lg" src={switzerland2} />
+            <img className="w-[300px] m-4 object-cover shadow-lg" src={switzerland2} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[400px] m-4 object-cover shadow-lg" src={portugal} />
+            <img className="w-[300px] m-4 object-cover shadow-lg" src={switzerland3} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[400px] m-4 object-cover shadow-lg" src={portugal2} />
+            <img className="w-[300px] m-4 object-cover shadow-lg" src={portugal} />
+          </div>
+        </div>
+        <div>
+          <div className=" min-h-[100px] flex justify-center items-center">
+            <img className="w-[300px] m-4 object-cover shadow-lg" src={portugal2} />
+          </div>
+        </div>
+        <div>
+          <div className=" min-h-[100px] flex justify-center items-center">
+            <img className="w-[300px] m-4 object-cover shadow-lg" src={portugal3} />
+          </div>
+        </div>
+        <div>
+          <div className=" min-h-[100px] flex justify-center items-center">
+            <img className="w-[300px] m-4 object-cover shadow-lg" src={portugal4} />
           </div>
         </div>
       </Slider>

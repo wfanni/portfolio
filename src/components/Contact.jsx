@@ -7,7 +7,7 @@ export default function Contact ({ pathname }) {
   const { t } = useTranslation();
   return (
     <section
-      className="contact relative mt-40 w-full h-[130vh] flex flex-col justify-start items-center gap-12"
+      className={`${pathname === "/contact" ? "mt-20" : null} contact relative w-full h-[145vh] flex flex-col justify-start items-center gap-12`}
     >
       <img src={iphone} className="absolute -top-10 -left-40 w-[75rem]" />
       <div className="w-3/4 flex justify-between items-start gap-10">

@@ -30,17 +30,17 @@ export default function Menu({
   }
 
   return (
-    <div className={`${scrollPosition === 0 && isHomePage ? "bg-opacity-0 text-white" : "bg-opacity-100 bg-gradient-to-r from-white via-white/70 to-transparent text-dark"} fixed h-screen pt-8 w-60 z-10 top-0 left-0 transition-all duration-200`}>
-      <nav className={`py-4 h-fit lg:px-4 xs:absolute flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-12 lg:gap-4 transition-all duration-200`}>
+    <div className={`fixed h-screen pt-8 w-60 z-10 top-0 left-0 bg-opacity-100 bg-gradient-to-r from-white via-white/70 to-transparent text-dark transition-all duration-200`}>
+      <nav className={`py-4 h-fit px-4 flex flex-col justify-start items-start gap-4 transition-all duration-200`}>
             <Link
               onClick={() => setMenuSelected("home")}
               to="/"
-              className="xs:hidden lg:block w-20 z-10 ml-4 hover:scale-110 transition-all duration-200"
+              className="block w-20 z-10 ml-4 hover:scale-110 transition-all duration-200"
             >
               <img src={logo} alt="wfanni logo" />
             </Link>
         <ul
-          className={`relative h-fit w-fit pl-6 flex xs:flex-col lg:flex-col xs:justify-start lg:justify-start items-start xs:gap-2 transition-all duration-200`}
+          className={`relative h-fit w-fit pl-6 flex flex-col justify-start items-start transition-all duration-200`}
         >
           <li className={`${menuSelected === "works" | pathname.includes("works") ? "selected" : null} menu-link relative text-[1rem] cursor-pointer flex gap-2 items-center uppercase`}
           >

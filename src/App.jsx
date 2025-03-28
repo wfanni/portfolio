@@ -9,8 +9,6 @@ import { useLocation } from "react-router-dom";
 import Loading from "./components/Loading";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import ExperiencePage from "./pages/ExperiencePage";
-import EducationPage from "./pages/EducationPage";
 import DesignPage from "./pages/DesignPage";
 import WorksPage from "./pages/WorksPage";
 import PhotoPage from "./pages/PhotoPage";
@@ -113,27 +111,7 @@ export default function App() {
               pathname={pathname}
             />
           }
-        />
-        <Route
-          path="/experience"
-          element={
-            <ExperiencePage
-              lang={langCode}
-              changeLanguage={onChangeLang}
-              pathname={pathname}
-            />
-          }
-        />
-        <Route
-          path="/education"
-          element={
-            <EducationPage
-              lang={langCode}
-              changeLanguage={onChangeLang}
-              pathname={pathname}
-            />
-          }
-        />        
+        />  
       </Routes>
       <button
         className={`backToTop fixed z-10 xs:right-4 sm:right-12 xs:bottom-4 sm:bottom-12 xs:px-6 sm:px-8 xs:py-4 xs:pt-[1.2rem] sm:py-6 transition-all duration-200 rounded-full bg-white/50 text-orange ${

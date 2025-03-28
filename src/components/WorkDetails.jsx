@@ -18,7 +18,7 @@ export default function WorkDetails ({ details, link, openPanel, pathname }) {
                         {link === "photoWorks" ? "See more photos..." : link === "socialWorks" ? "See some reels..." : "Read more..."}
                 </Link>
             </div>
-            {openPanel === 1 ? <UIShowcase /> : openPanel === 2 ? <PhotoShowcase /> : null}
+            {openPanel === 1 ? <UIShowcase pathname={pathname} /> : openPanel === 2 ? <PhotoShowcase pathname={pathname} /> : null}
             
         </section>
     )

@@ -190,6 +190,11 @@ h1 {
   color: #ff5d30;
 }
 
+.slick-list {
+  width: 100vw;
+  margin-left: auto !important;
+}
+
 .slick-slider {
   background-color: rgba(255, 93, 48, 0.1411764706);
   margin: 0 !important;
@@ -204,7 +209,7 @@ h1 {
 .slick-dots {
   width: -moz-fit-content;
   width: fit-content;
-  left: calc(50% + 60px);
+  left: calc(55% + 60px);
   bottom: -2.5rem;
 }
 .slick-dots li button::before {

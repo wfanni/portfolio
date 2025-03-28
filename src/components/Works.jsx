@@ -13,7 +13,7 @@ export default function Works ({ pathname }) {
     return (
         <section className="min-h-screen h-fit w-full flex flex-col justify-start items-end">
             <img src={works} className="w-full h-[570px] -mr-28 object-[center_-36rem] object-cover"/>
-            <div className="w-2/3 mr-36 flex flex-col gap-10 justify-start items-center">
+            <div className="w-3/4 mr-36 flex flex-col gap-10 justify-start items-center">
                 <div className="w-full flex flex-col justify-center items-center ">
                     <h2 className="w-fit mt-2 xs:text-[2rem] sm:text-[3rem] uppercase">Works</h2>
                 </div>
@@ -51,7 +51,7 @@ export default function Works ({ pathname }) {
                     </article>
                 </div>
             </div>
-            <div className="w-full mb-40 -mr-28 flex justify-start">
+            <div className="w-full mb-40 flex justify-start">
                 {openPanel === 1 ? <WorkDetails link="uiWorks" details={workDetails.ui} openPanel={1} pathname={pathname} /> : null}
                 {openPanel === 2 ? <WorkDetails link="photoWorks" details={workDetails.photo} openPanel={2} pathname={pathname} /> : null}
                 {openPanel === 3 ? <WorkDetails link="socialWorks" details={workDetails.social} openPanel={3} pathname={pathname} /> : null}

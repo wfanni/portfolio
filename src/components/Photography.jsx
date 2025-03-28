@@ -13,12 +13,12 @@ export default function Photography ({ pathname }) {
   console.log(openPanel);
   return (
     <section
-      className="min-h-screen h-fit w-full  flex flex-col justify-center items-end">
+      className="min-h-screen h-fit w-full flex flex-col justify-center items-end">
       <div className="w-2/3 mr-60 flex flex-col gap-20 justify-start items-center">
         <div className="w-full flex flex-col justify-center items-center ">
           <img src={photo} className="w-full h-[580px] scale-[100%] object-cover -mt-0 -mr-28"/>
           <h2 className="w-fit -mr-24 mt-2 xs:text-[2rem] sm:text-[3rem] uppercase">
-            Photography, Photo & Video Editing
+            Photography
           </h2>
         </div>
         <div className="w-full max-w-3/4 -mr-28 flex justify-around items-start ">
@@ -53,7 +53,7 @@ export default function Photography ({ pathname }) {
             </div>
           </article>
         </div>
-        <div className="w-full mb-40 -mr-28 flex justify-start">
+        <div className="w-full mb-40 flex justify-start">
           {openPanel === 1 ? <PhotoDetails details={workDetails} /> : null}
           {openPanel === 2 ? <PhotoDetails details={workDetails} /> : null}
           {openPanel === 3 ? <PhotoDetails details={workDetails} /> : null}

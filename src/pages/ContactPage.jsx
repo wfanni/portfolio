@@ -11,9 +11,7 @@ export default function ContactPage({ lang, changeLanguage, pathname }) {
         lang={lang}
         pathname={pathname}
       />
-      <div className="-mt-20">
-        <Contact pathname={pathname} />
-      </div>
+      <Contact pathname={pathname} />
       <Footer pathname={pathname} />
     </div>
   );
