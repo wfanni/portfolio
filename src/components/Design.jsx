@@ -15,15 +15,15 @@ export default function Design ({ pathname }) {
   console.log(openPanel);
   return (
     <section
-      className="min-h-screen h-fit w-full  flex flex-col justify-center items-end">
-      <div className="w-2/3 mr-60 flex flex-col gap-20 justify-start items-center">
+      className="min-h-screen h-fit w-full pb-40 flex flex-col justify-center items-end">
+      <div className="w-full flex flex-col gap-20 justify-start items-center">
         <div className="w-full flex flex-col justify-center items-center ">
-          <img src={design} className="w-full -mt-16 -mr-28"/>
-          <h2 className="w-fit -mr-24 -mt-8 xs:text-[2rem] sm:text-[3rem] uppercase">
+          <img src={design} className="w-full max-h-[570px] object-cover"/>
+          <h2 className="w-fit mt-2 sm:text-[3rem] uppercase">
             UI/UX Design & Development
           </h2>
         </div>
-        <div className="w-full max-w-3/4 -mr-28 flex flex-col gap-10">
+        <div className="w-full flex flex-col gap-10">
           <div className="flex justify-center items-start gap-10">
             <article className="design-panel flex flex-col justify-center gap-10 ">
               <div onClick={() => setOpenPanel(1)} className={`${openPanel === 1 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-60 min-h-48 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end justify-center transition-all duration-200`}>
@@ -56,7 +56,7 @@ export default function Design ({ pathname }) {
               </div>
             </article>
           </div>
-          <div className="w-full max-w-3/4 -mr-28 flex justify-center items-start gap-10">
+          <div className="w-full flex justify-center items-start gap-10">
             <article className="design-panel flex flex-col justify-center gap-10 ">
               <div onClick={() => setOpenPanel(4)} className={`${openPanel === 4 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-60 min-h-48 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200`}>
                 <div className="max-h-32 absolute top-0 w-full h-fit ">
@@ -79,12 +79,12 @@ export default function Design ({ pathname }) {
             </article>
           </div>
         </div>
-        <div className="w-full mb-40 -mr-28 flex justify-start">
-          {openPanel === 1 ? <DesignDetails details={designDetails.car} /> : null}
-          {openPanel === 2 ? <DesignDetails details={designDetails.travel} /> : null}
-          {openPanel === 3 ? <DesignDetails details={designDetails.pet} /> : null}
-          {openPanel === 4 ? <DesignDetails details={designDetails.uw} /> : null}
-          {openPanel === 5 ? <DesignDetails details={designDetails.habit} /> : null}
+        <div className="w-full flex justify-start">
+          {openPanel === 1 ? <DesignDetails details={designDetails.car} openPanel={openPanel} /> : null}
+          {openPanel === 2 ? <DesignDetails details={designDetails.travel} openPanel={openPanel} /> : null}
+          {openPanel === 3 ? <DesignDetails details={designDetails.pet} openPanel={openPanel} /> : null}
+          {openPanel === 4 ? <DesignDetails details={designDetails.uw} openPanel={openPanel} /> : null}
+          {openPanel === 5 ? <DesignDetails details={designDetails.habit} openPanel={openPanel} /> : null}
         </div>
       </div>
     </section>

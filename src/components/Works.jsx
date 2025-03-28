@@ -12,13 +12,13 @@ export default function Works ({ pathname }) {
 
     return (
         <section className="min-h-screen h-fit w-full flex flex-col justify-start items-end">
-            <img src={works} className="w-full h-[570px] -mr-28 object-[center_-36rem] object-cover"/>
-            <div className="w-3/4 mr-36 flex flex-col gap-10 justify-start items-center">
+            <img src={works} className="w-full h-[570px] object-[center_-22rem] object-cover"/>
+            <div className="w-full flex flex-col gap-10 justify-start items-center">
                 <div className="w-full flex flex-col justify-center items-center ">
                     <h2 className="w-fit mt-2 xs:text-[2rem] sm:text-[3rem] uppercase">Works</h2>
                 </div>
                 <p className="text-center">A collection of my work across UI/UX design, photo and video editing and content creation. From designing intuitive digital experiences to producing engaging visuals, photography, and video content, each project reflects my passion for creativity and storytelling.</p>
-                <div className="w-full max-w-3/4 flex justify-around items-start ">
+                <div className="w-full flex justify-around items-start ">
                     <article className="design-panel flex flex-col justify-center gap-10 ">
                     <div onClick={() => setOpenPanel(1)} className={`${openPanel === 1 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-60 min-w-[240px] min-h-48 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end justify-center transition-all duration-200`}>
                         <div className="max-h-32 absolute top-0 w-full h-fit ">

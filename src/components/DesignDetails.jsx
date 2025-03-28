@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import PetGallery from "./PetGallery";
+import HabitGallery from "./HabitGallery";
 
-export default function DesignDetails ({ details }) {
+
+export default function DesignDetails ({ details, openPanel }) {
 
     return (
         <section className="w-full panel-content flex-col gap-10">
@@ -20,30 +23,21 @@ export default function DesignDetails ({ details }) {
                     <img src={details.img1} className="relative -left-4 max-w-[450px] scale-105 h-fit" />
                     <img src={details.img2} className="relative -right-32 top-10 max-w-[450px] scale-105 h-fit" />
                 </div>
-                : details.img3habit ? 
-                <div className="w-full flex flex-col gap-0">
-                    <img src={details.img1} className="relative -left-4 max-w-[450px] scale-105 h-fit shadow-lg" />
-                </div>
                 :
                 <img src={details.img1} className="w-[450px] h-fit" />}
 
             </div>
-            {details.img3 && 
+
+            {details.img3 &&
             <div className="relative -left-48 -top-20 -mt-10 flex justify-center">
                 <div className="">
                     <img src={details.img3} className="w-[750px] h-fit" />
                 </div>
             </div>}
 
-            {details.img3habit && 
-            <div className="w-full relative flex justify-center">
-                <div className="w-full flex justify-between">
-                    <img src={details.img2} className="w-[450px] h-[320px] shadow-lg" />
-                    <img src={details.img3habit} className="w-[450px] h-[320px] shadow-lg" />
+            {openPanel === 3 && <PetGallery />}
+            {openPanel === 5 && <HabitGallery />}
 
-                </div>
-            </div>}
-            
         </section>
     )
 };

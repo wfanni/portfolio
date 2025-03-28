@@ -19,10 +19,7 @@
         "desc": "This project is very close to my heart, it was one of the first design project I got. I'm very proud of it in general, but especially, because I put it together on a weekend, and the client chose my design over an actual design company's suggestion.",
         "desc2": "I also created a prototype for this one, and implemented the design myself. I really loved the topic of it as well, let's be honest, insurance can be boring sometimes, but pets are fun!",
         "desc3": "As you can already tell, I got some freedom in this project, compared to the others. I still had to make sure it's compatible with our environment.",
-        "desc4": "*The icons I used are not mine!",
-        "img1": "src/assets/pet-ui1.png",
-        "img2": "src/assets/pet-ui2.png",
-        "img3": "src/assets/pet-ui3.png"
+        "desc4": "*The icons I used are not mine!"
     },
     "uw": {
         "title": "Underwriting B2B Journey",
@@ -33,9 +30,6 @@
     "habit": {
         "title": "Habit Tracker App",
         "desc": "This was a hobby project my manager asked me to help him with. I really enjoyed it, I got full freedom, but looking back on the design now, I feel like it could've been more professional and precise.",
-        "desc2": "There wasn't much pressure here and as soon as we had our ideas put into the design we went onto implementing, so the design file itself wasn't the priority.",
-        "img1": "src/assets/habit1.png",
-        "img2": "src/assets/habit2.png",
-        "img3habit": "src/assets/habit3.png"
+        "desc2": "There wasn't much pressure here and as soon as we had our ideas put into the design we went onto implementing, so the design file itself wasn't the priority."
     }
 }

@@ -236,6 +236,7 @@ h1 {
 //     }
 //   }
 }
+
 .slick-list {
   width: 100vw;
   margin-left: auto !important;
@@ -252,7 +253,7 @@ h1 {
 }
 .slick-dots {
   width: fit-content;
-  left: calc(55% + 60px);
+  left: calc((55% + 60px) - 10rem);
   bottom: -2.5rem;
   li {
     button {

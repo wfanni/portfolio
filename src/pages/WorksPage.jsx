@@ -11,7 +11,9 @@ export default function DesignPage({ lang, changeLanguage, pathname }) {
         lang={lang}
         pathname={pathname}
       />
-      <Works pathname={pathname} />
+      <div className="mr-40 ml-60">
+        <Works pathname={pathname} />
+      </div>
       <Footer pathname={pathname} />
     </div>
   );

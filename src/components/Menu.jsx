@@ -30,7 +30,7 @@ export default function Menu({
   }
 
   return (
-    <div className={`fixed h-screen pt-8 w-60 z-10 top-0 left-0 bg-opacity-100 bg-gradient-to-r from-white via-white/70 to-transparent text-dark transition-all duration-200`}>
+    <div className={`fixed h-screen pt-8 w-72 z-10 top-0 left-0 bg-opacity-100 bg-gradient-to-r from-white via-white/60 to-transparent text-dark transition-all duration-200`}>
       <nav className={`py-4 h-fit px-4 flex flex-col justify-start items-start gap-4 transition-all duration-200`}>
             <Link
               onClick={() => setMenuSelected("home")}
