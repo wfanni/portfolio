@@ -13,7 +13,7 @@ export default function DesignPage({ lang, changeLanguage, pathname }) {
       />
       <div className="mr-40 ml-60">
         <Design pathname={pathname} />
-        </div>
+      </div>
       <Footer pathname={pathname} />
     </div>
   );

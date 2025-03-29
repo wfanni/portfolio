@@ -11,7 +11,9 @@ export default function SocialPage({ lang, changeLanguage, pathname }) {
         lang={lang}
         pathname={pathname}
       />
-      <SocialMedia pathname={pathname}/>
+      <div className="mr-40 ml-60">
+        <SocialMedia pathname={pathname}/>
+        </div>
       <Footer pathname={pathname} />
     </div>
   );

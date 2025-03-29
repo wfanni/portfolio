@@ -253,8 +253,14 @@ h1 {
 }
 .slick-dots {
   width: fit-content;
-  left: calc((55% + 60px) - 10rem);
   bottom: -2.5rem;
+  .ui & {
+    left: calc((55% + 60px) - 12.5rem);
+  }
+  .photo & {
+    left: calc((55% + 60px) - 17rem);
+
+  }
   li {
     button {
       &::before {

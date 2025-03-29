@@ -9,9 +9,9 @@ export default function Footer ({ pathname }) {
             <div className="flex gap-2">
                 <p className="h-fit">2025 | developed by wfanni |</p>
                 <div className="mt-[2px] flex items-center gap-4">
-                    <a href="https://www.instagram.com/lovelydkl/" className="hover:scale-110 transition-all duration-200"><i class="fa-brands fa-instagram text-[1.2rem] text-white"></i></a>
-                    <a href="https://www.tiktok.com/@lovelydkl_" className="hover:scale-110 transition-all duration-200"><i class="fa-brands fa-tiktok text-[1.2rem] text-white"></i></a>
-                    <a href="https://www.linkedin.com/in/fanni-wihl/" className="hover:scale-110 transition-all duration-200"><i class="fa-brands fa-linkedin-in text-[1.2rem] text-white"></i></a>
+                    <a href="https://www.instagram.com/lovelydkl/" className="hover:scale-110 transition-all duration-200"><i className="fa-brands fa-instagram text-[1.2rem] text-white"></i></a>
+                    <a href="https://www.tiktok.com/@lovelydkl_" className="hover:scale-110 transition-all duration-200"><i className="fa-brands fa-tiktok text-[1.2rem] text-white"></i></a>
+                    <a href="https://www.linkedin.com/in/fanni-wihl/" className="hover:scale-110 transition-all duration-200"><i className="fa-brands fa-linkedin-in text-[1.2rem] text-white"></i></a>
                 </div>
             </div>
             <div className="flex gap-2">

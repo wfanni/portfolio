@@ -209,8 +209,13 @@ h1 {
 .slick-dots {
   width: -moz-fit-content;
   width: fit-content;
-  left: calc(55% + 60px - 10rem);
   bottom: -2.5rem;
+}
+.ui .slick-dots {
+  left: calc(55% + 60px - 12.5rem);
+}
+.photo .slick-dots {
+  left: calc(55% + 60px - 17rem);
 }
 .slick-dots li button::before {
   font-size: 15px;

@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import UIShowcase from "./UIShowcase";
 import PhotoShowcase from "./PhotoShowcase";
-import PhotoGallery from "./PhotoGallery";
 
 
 export default function WorkDetails ({ details, link, openPanel, pathname }) {
@@ -20,7 +19,7 @@ export default function WorkDetails ({ details, link, openPanel, pathname }) {
                         {link === "photoWorks" ? "See more photos..." : link === "socialWorks" ? "See some reels..." : "Read more..."}
                 </Link>
             </div>
-            {openPanel === 1 ? <UIShowcase pathname={pathname} /> : openPanel === 2 ? <PhotoGallery pathname={pathname} /> : null}
+            {openPanel === 1 ? <UIShowcase pathname={pathname} /> : openPanel === 2 ? <PhotoShowcase pathname={pathname} /> : null}
             
         </section>
     )

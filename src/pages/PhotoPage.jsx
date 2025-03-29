@@ -11,7 +11,9 @@ export default function PhotoPage({ lang, changeLanguage, pathname }) {
         lang={lang}
         pathname={pathname}
       />
-      <Photography pathname={pathname} />
+      <div className="mr-40 ml-60">
+        <Photography pathname={pathname} />
+      </div>
       <Footer pathname={pathname} />
     </div>
   );

@@ -33,7 +33,7 @@ export default function UIShowcase({ pathname }) {
   };
   return (
     <>
-      <Slider {...settings} className={`${pathname === "/works" ? "min-w-[100vw] translate-x-[10rem]" : "-right-16 min-w-[100vw]"} max-w-full mb-4`}>
+      <Slider {...settings} className={`${pathname === "/works" ? "min-w-[100vw] translate-x-[10rem]" : "-right-16 min-w-[100vw]"} ui max-w-full mb-4`}>
         <div>
           <div className="min-h-[100px] flex justify-center items-center">
             <img className="w-[350px] m-4 object-cover shadow-lg" src={car} />
