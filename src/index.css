@@ -196,9 +196,9 @@ h1 {
 }
 
 .slick-slider {
-  background-color: rgba(255, 93, 48, 0.1411764706);
+  background-color: rgba(255, 93, 48, 0.1254901961);
   margin: 0 !important;
-  padding: 1rem 0;
+  padding: 0.5rem 0 0;
 }
 
 .slick-track {
@@ -215,7 +215,7 @@ h1 {
   left: calc(55% + 60px - 12.5rem);
 }
 .photo .slick-dots {
-  left: calc(55% + 60px - 17rem);
+  left: calc(55% + 60px - 16rem);
 }
 .slick-dots li button::before {
   font-size: 15px;
@@ -233,4 +233,28 @@ h1 {
   color: #ff5d30;
   opacity: 1;
   font-size: 2rem;
+}
+
+blockquote {
+  overflow: visible !important;
+}
+
+.rsme-instagram-embed {
+  border-radius: 1rem !important;
+  overflow: visible !important;
+}
+.rsme-instagram-embed iframe {
+  border-radius: 8px !important;
+  border-color: rgba(22, 24, 35, 0.12) !important;
+}
+
+.rsme-tiktok-embed iframe ~ a {
+  display: none;
+}
+
+iframe {
+  transition: all 0.2s ease-in-out;
+}
+iframe:hover {
+  transform: scale(102%);
 }/*# sourceMappingURL=index.css.map */

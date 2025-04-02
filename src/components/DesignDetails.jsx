@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-// import PetGallery from "./PetGallery";
-// import HabitGallery from "./HabitGallery";
+import PetGallery from "./PetGallery";
+import UWGallery from "./UWGallery";
+import HabitGallery from "./HabitGallery";
 
 
 export default function DesignDetails ({ details, openPanel }) {
@@ -34,9 +35,22 @@ export default function DesignDetails ({ details, openPanel }) {
                     <img src={details.img3} className="w-[750px] h-fit" />
                 </div>
             </div>}
-{/* 
-            {openPanel === 3 && <PetGallery />}
-            {openPanel === 5 && <HabitGallery />} */}
+
+            {openPanel === 3 && 
+            <div className="pt-10">
+                <PetGallery openPanel={openPanel} />
+            </div>
+            }
+            {openPanel === 4 && 
+            <div className="-mt-8">
+                <UWGallery openPanel={openPanel} />
+            </div>
+            }
+            {openPanel === 5 && 
+            <div className="-mt-8">
+                <HabitGallery openPanel={openPanel} />
+            </div>
+            }
 
         </section>
     )

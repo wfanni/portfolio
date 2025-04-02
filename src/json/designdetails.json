@@ -24,8 +24,7 @@
     "uw": {
         "title": "Underwriting B2B Journey",
         "desc": "I was asked to redesign a complex underwriting application, as the previous look & feel was obviously not the best. Working together with Business and System Analysts, and creating the design in a test environment to ensure its feasibility, I managed to prepare something that the clients really liked.",
-        "desc2": "I am also very proud of the result myself, I shortened and reorganized the form and created more contrast, highlighting important inputs and sections for the user.",
-        "img1": "src/assets/travel-ui.png"
+        "desc2": "I am also very proud of the result myself, I shortened and reorganized the form and created more contrast, highlighting important inputs and sections for the user."
     },
     "habit": {
         "title": "Habit Tracker App",

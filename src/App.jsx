@@ -17,6 +17,7 @@ import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 
+
 export default function App() {
   const [scrollY, setScrollY] = useState(window.scrollY);
   const {pathname} = useLocation();

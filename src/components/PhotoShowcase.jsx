@@ -40,50 +40,45 @@ export default function PhotoShowcase({ pathname }) {
   };
   return (
     <>
-      <Slider {...settings} className={`${pathname === "/works" ? "min-w-[100vw] translate-x-[10rem]" : "-right-16 min-w-[100vw]"} photo max-w-full mb-4`}>
+      <Slider {...settings} className={`${pathname === "/works" ? "min-w-[100vw] translate-x-[10rem]" : "-right-28 min-w-[100vw]"} photo max-w-full mb-4`}>
         <div>
           <div className="min-h-[100px] flex justify-center items-center">
-            <img className="w-[300px] m-4 object-cover shadow-lg" src={portugal5} />
+            <img className="w-[200px] m-4 mb-6 object-cover shadow-lg" src={portugal5} />
           </div>
         </div>
         <div>
           <div className="min-h-[100px] flex justify-center items-center">
-            <img className="w-[300px] m-4 object-cover shadow-lg" src={spain} />
+            <img className="w-[200px] m-4 mb-6 object-cover shadow-lg" src={spain} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[300px] m-4 object-cover shadow-lg" src={switzerland2} />
+            <img className="w-[200px] m-4 mb-6 object-cover shadow-lg" src={switzerland2} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[300px] m-4 object-cover shadow-lg" src={portugal} />
+            <img className="w-[200px] m-4 mb-6 object-cover shadow-lg" src={portugal} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[300px] m-4 object-cover shadow-lg" src={switzerland3} />
-          </div>
-        </div>
-        {/* <div>
-          <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[300px] m-4 object-cover shadow-lg" src={portugal2} />
-          </div>
-        </div> */}
-        <div>
-          <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[300px] m-4 object-cover shadow-lg" src={portugal3} />
+            <img className="w-[200px] m-4 mb-6 object-cover shadow-lg" src={switzerland3} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[300px] m-4 object-cover shadow-lg" src={spain2} />
+            <img className="w-[200px] m-4 mb-6 object-cover shadow-lg" src={portugal3} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[300px] m-4 object-cover shadow-lg" src={portugal4} />
+            <img className="w-[200px] m-4 mb-6 object-cover shadow-lg" src={spain2} />
+          </div>
+        </div>
+        <div>
+          <div className=" min-h-[100px] flex justify-center items-center">
+            <img className="w-[200px] m-4 mb-6 object-cover shadow-lg" src={portugal4} />
           </div>
         </div>
       </Slider>

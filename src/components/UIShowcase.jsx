@@ -33,25 +33,25 @@ export default function UIShowcase({ pathname }) {
   };
   return (
     <>
-      <Slider {...settings} className={`${pathname === "/works" ? "min-w-[100vw] translate-x-[10rem]" : "-right-16 min-w-[100vw]"} ui max-w-full mb-4`}>
+      <Slider {...settings} className={`${pathname === "/works" ? "min-w-[100vw] translate-x-[10rem]" : "-right-28 min-w-[100vw]"} ui max-w-full mb-4`}>
         <div>
           <div className="min-h-[100px] flex justify-center items-center">
-            <img className="w-[350px] m-4 object-cover shadow-lg" src={car} />
+            <img className="w-[200px] m-4 mb-6 object-cover shadow-lg" src={car} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[450px] m-4 object-cover" src={pet} />
+            <img className="w-[250px] m-4 mb-6 object-cover" src={pet} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[350px] m-4 object-cover shadow-lg" src={travel} />
+            <img className="max-h-[165px] m-4 mb-6 object-top object-cover shadow-lg" src={travel} />
           </div>
         </div>
         <div>
           <div className=" min-h-[100px] flex justify-center items-center">
-            <img className="w-[350px] m-4 object-cover shadow-lg" src={habit} />
+            <img className="w-[200px] m-4 mb-6 object-cover shadow-lg" src={habit} />
           </div>
         </div>
       </Slider>

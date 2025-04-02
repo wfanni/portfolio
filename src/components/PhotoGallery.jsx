@@ -10,7 +10,7 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
 import Images from "./Images";
-import slides from "../json/images";
+import slides from "../json/photoSlides";
 
 export default function PhotoGallery() {
     const [index, setIndex] = useState(-1);

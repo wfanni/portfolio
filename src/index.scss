@@ -243,9 +243,9 @@ h1 {
 }
 
 .slick-slider {
-  background-color:#ff5d3024;
+  background-color:#ff5d3020;
   margin: 0 !important;
-  padding: 1rem 0;
+  padding: 0.5rem 0 0;
 }
 .slick-track {
   display: flex;
@@ -258,7 +258,7 @@ h1 {
     left: calc((55% + 60px) - 12.5rem);
   }
   .photo & {
-    left: calc((55% + 60px) - 17rem);
+    left: calc((55% + 60px) - 16rem);
 
   }
   li {
@@ -280,5 +280,29 @@ h1 {
     color: #ff5d30;
     opacity: 1;
     font-size: 2rem;
+  }
+}
+blockquote {
+  overflow: visible !important
+}
+.rsme-instagram-embed {
+  border-radius: 1rem !important;
+  overflow: visible !important;
+  iframe {
+    border-radius: 8px !important;
+    border-color: rgb(22 24 35 / 12%) !important;
+  }
+}
+.rsme-tiktok-embed {
+  iframe ~ a {
+    display: none;
+  }
+}
+
+iframe {
+
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(102%);
   }
 }
