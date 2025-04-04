@@ -5,7 +5,7 @@ body {
   position: relative;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.2rem;
-  color: #20063b;
+  color: #1E1E24;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   background-color: white;
@@ -196,7 +196,7 @@ h1 {
 }
 
 .slick-slider {
-  background-color: rgba(255, 93, 48, 0.1254901961);
+  background-color: rgba(255, 190, 157, 0.5764705882);
   margin: 0 !important;
   padding: 0.5rem 0 0;
 }

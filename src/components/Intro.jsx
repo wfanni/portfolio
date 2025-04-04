@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
-import hero from "../assets/laptop-hero2.png";
+import hero from "../assets/flathero4.png";
 
 export default function Intro({ pathname }) {
   const { i18n, t } = useTranslation();
@@ -33,10 +33,10 @@ export default function Intro({ pathname }) {
 
   return (
     <section className="relative z-[-1] bg-white bg-[length:150%] bg-no-repeat bg-[center_top_-10rem] h-[120vh] after:content-[''] after:absolute after:w-full after:h-60 after:bottom-0 after:bg-gradient-to-t after:from-white after:to-transparentrelative flex flex-col items-end justify-start">
-      <img src={hero} className="absolute right-20 z-[-1] scale-150 object-bottom overflow-hidden max-h-full" />
-      <div className="relative w-fit font-normal flex flex-col top-32 -left-4 gap-10">
+      <img src={hero} className="absolute right-20 -top-12 z-[-1] scale-150 object-bottom overflow-hidden max-h-full" />
+      <div className="relative w-fit font-normal flex flex-col top-[5.5rem] -left-4 gap-10">
         <h1 className="relative w-[60vw] flex flex-col items-start justify-start">
-          <span className="w-fit top-4 text-[1.6rem] flex flex-col items-start ">
+          <span className="w-fit text-[1.6rem] flex flex-col items-start ">
             <span className="block font-abril text-[2.5rem]">{t("introHello1")}</span>
             <span className="block">{t("introHello2")}</span>
           </span>

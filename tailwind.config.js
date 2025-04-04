@@ -13,7 +13,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'intro': "url('/src/assets/laptop-hero2.png')",
+        'intro': "url('/src/assets/flathero2.png')",
         'about': "url('/src/assets/bg-12.svg')",
         'skills': "url('/src/assets/bg-2.svg')",
         'projects': "url('/src/assets/bg-32.svg')",
@@ -25,8 +25,9 @@ export default {
       },
       colors: {
         orange: '#ff5d30',
+        'orange-secondary': '#FFBE9D',
         green: '#6EEB83',
-        dark: '#2B363C',
+        dark: '#1E1E24',
       },
       animation: {
         fadeInLeft: 'fadeInLeft 0.5s',

@@ -6,7 +6,7 @@ import carjourney from "../assets/car-design1.svg";
 import traveljourney from "../assets/travel-design4.svg";
 import petjourney from "../assets/pet-design3.svg";
 import PhotoDetails from "./PhotoDetails";
-// import PhotoAlbum from "./PhotoAlbum";
+import PhotoAlbum from "./PhotoAlbum";
 import PhotoGallery from "./PhotoGallery";
 
 
@@ -24,7 +24,7 @@ export default function Photography ({ pathname }) {
           </h2>
         </div>
         <div className="w-full flex justify-around items-start ">
-          <PhotoGallery pathname={pathname} />
+          <PhotoAlbum pathname={pathname} />
         </div>
       </div>
     </section>
