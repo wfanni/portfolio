@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useState, forwardRef, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import PetGallery from "./PetGallery";
 import UWGallery from "./UWGallery";
 import HabitGallery from "./HabitGallery";
 
 
-export default function DesignDetails ({ details, openPanel }) {
-
+const DesignDetails = function ( props, ref ) {
+    const {details, openPanel} = props;
+    setTimeout(() => {
+        console.log(ref.current);
+        
+    }, 400);
     return (
-        <section className="w-full panel-content flex-col gap-10">
+        <section ref={ref} className="w-full panel-content flex-col gap-10">
             <div className="w-full flex gap-10">
                 <div className="flex flex-col gap-10">
                     <h2 className="min-w-fit text-[2rem]">{details.title}</h2>
@@ -55,3 +59,5 @@ export default function DesignDetails ({ details, openPanel }) {
         </section>
     )
 };
+
+export default forwardRef(DesignDetails)

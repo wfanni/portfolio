@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import designDetails from "../json/designdetails.json";
 import design from "../assets/uiux-hero.svg";
@@ -10,6 +10,12 @@ import habitjourney from "../assets/calendar-design.svg";
 import DesignDetails from "./DesignDetails";
 
 export default function Design ({ pathname }) {
+  const carRef = useRef();
+  const travelRef = useRef();
+  const petRef = useRef();
+  const uwRef = useRef();
+  const habitRef = useRef();
+
   const { t } = useTranslation();
   const [openPanel, setOpenPanel]= useState(0);
   console.log(openPanel);
@@ -26,7 +32,7 @@ export default function Design ({ pathname }) {
         <div className="w-full flex flex-col gap-10">
           <div className="flex justify-center items-start gap-10">
             <article className="design-panel flex flex-col justify-center gap-10 ">
-              <div onClick={() => setOpenPanel(1)} className={`${openPanel === 1 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end justify-center transition-all duration-200`}>
+              <div onClick={() => {setOpenPanel(1); setTimeout(() => {carRef.current.scrollIntoView({ behavior: "smooth", inline: "center" })},100)}} className={`${openPanel === 1 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end justify-center transition-all duration-200`}>
                 <div className="max-h-32 absolute top-0 w-full h-fit ">
                   <img src={carjourney} className={`${openPanel === 1 ? "opacity-100" : "opacity-50"} absolute top-10 right-16 scale-[180%] group-hover:opacity-100 transition-all duration-200`}/>
                 </div>
@@ -36,7 +42,7 @@ export default function Design ({ pathname }) {
               </div>
             </article>
             <article className="design-panel flex flex-col justify-center gap-10 ">
-              <div onClick={() => setOpenPanel(2)} className={`${openPanel === 2 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200`}>
+              <div onClick={() => {setOpenPanel(2); setTimeout(() => {travelRef.current.scrollIntoView({ behavior: "smooth", inline: "center" })},100)}} className={`${openPanel === 2 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200`}>
                 <div className="max-h-32 absolute top-0 w-full h-fit ">
                   <img src={traveljourney} className={`${openPanel === 2 ? "opacity-100" : "opacity-50"} absolute top-6 left-12 scale-[155%] group-hover:opacity-100 transition-all duration-200`}/>
                 </div>
@@ -46,7 +52,7 @@ export default function Design ({ pathname }) {
               </div>
             </article>
             <article className="design-panel flex flex-col justify-center gap-10 ">
-              <div onClick={() => setOpenPanel(3)} className={`${openPanel === 3 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200`}>
+              <div onClick={() => {setOpenPanel(3); setTimeout(() => {petRef.current.scrollIntoView({ behavior: "smooth", inline: "center" })},100)}} className={`${openPanel === 3 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200`}>
                 <div className="max-h-32 absolute top-0 w-full h-fit ">
                   <img src={petjourney} className={`${openPanel === 3 ? "opacity-100" : "opacity-50"} absolute -top-2 left-8 scale-[160%] group-hover:opacity-100 transition-all duration-200`}/>
                 </div>
@@ -58,7 +64,7 @@ export default function Design ({ pathname }) {
           </div>
           <div className="w-full flex justify-center items-start gap-10">
             <article className="design-panel flex flex-col justify-center gap-10 ">
-              <div onClick={() => setOpenPanel(4)} className={`${openPanel === 4 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200`}>
+              <div onClick={() => {setOpenPanel(4); setTimeout(() => {uwRef.current.scrollIntoView({ behavior: "smooth", inline: "center" })},100)}} className={`${openPanel === 4 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200`}>
                 <div className="max-h-32 absolute top-0 w-full h-fit ">
                   <img src={uwjourney} className={`${openPanel === 4 ? "opacity-100" : "opacity-50"} absolute top-0 scale-[109%] group-hover:opacity-100 transition-all duration-200`}/>
                 </div>
@@ -68,7 +74,7 @@ export default function Design ({ pathname }) {
               </div>
             </article>
             <article className="design-panel flex flex-col justify-center gap-10 ">
-              <div onClick={() => setOpenPanel(5)} className={`${openPanel === 5 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200`}>
+              <div onClick={() => {setOpenPanel(5); setTimeout(() => {habitRef.current.scrollIntoView({ behavior: "smooth", inline: "center" })},100)}} className={`${openPanel === 5 ? "shadow-md shadow-orange/25 hover:shadow-orange/25" : ""} group relative overflow-hidden max-w-[300px] min-h-80 bg-white rounded-xl shadow-2xl cursor-pointer hover:shadow-md flex items-end transition-all duration-200`}>
                 <div className="max-h-32 absolute top-0 w-full h-fit ">
                   <img src={habitjourney} className={`${openPanel === 5 ? "opacity-100" : "opacity-50"} absolute top-0 left-0 scale-[140%] group-hover:opacity-100 transition-all duration-200`}/>
                 </div>
@@ -80,11 +86,11 @@ export default function Design ({ pathname }) {
           </div>
         </div>
         <div className="w-full flex justify-start">
-          {openPanel === 1 ? <DesignDetails details={designDetails.car} openPanel={openPanel} /> : null}
-          {openPanel === 2 ? <DesignDetails details={designDetails.travel} openPanel={openPanel} /> : null}
-          {openPanel === 3 ? <DesignDetails details={designDetails.pet} openPanel={openPanel} /> : null}
-          {openPanel === 4 ? <DesignDetails details={designDetails.uw} openPanel={openPanel} /> : null}
-          {openPanel === 5 ? <DesignDetails details={designDetails.habit} openPanel={openPanel} /> : null}
+          {openPanel === 1 ? <DesignDetails ref={carRef} details={designDetails.car} openPanel={openPanel} /> : null}
+          {openPanel === 2 ? <DesignDetails ref={travelRef} details={designDetails.travel} openPanel={openPanel} /> : null}
+          {openPanel === 3 ? <DesignDetails ref={petRef} details={designDetails.pet} openPanel={openPanel} /> : null}
+          {openPanel === 4 ? <DesignDetails ref={uwRef} details={designDetails.uw} openPanel={openPanel} /> : null}
+          {openPanel === 5 ? <DesignDetails ref={habitRef} details={designDetails.habit} openPanel={openPanel} /> : null}
         </div>
       </div>
     </section>

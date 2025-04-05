@@ -9,28 +9,17 @@ export default function Menu({
   pathname
 }) {
   const { t } = useTranslation();
-  const [isHomePage, setIsHomePage] = useState(false);
   const [menuSelected, setMenuSelected] = useState("home");
+  const [subMenuOpen, setIsSubMenuOpen] = useState(false);
   
   function setLanguage() {
     langSelected === selectedLanguage;
     console.log(selectedLanguage)
   }
-
-  function isItHomePage() {
-    if (window.location.href === "http://localhost:5173/#/") {
-      setIsHomePage(true);
-    }
-    else setIsHomePage(false);
-    console.log(isHomePage);
-  }
-
-  function toggleHamMenu() {
-    setIsMenuOpen((prev) => !prev);
-  }
+  console.log(subMenuOpen)
 
   return (
-    <div className={`fixed top-4 h-fit p-2 pr-6 bg-white/60 text-dark transition-all duration-200`}>
+    <div className={`${pathname === "/" ? "" : "bg-gradient-to-r from-white via-white/65 to-transparent"} fixed z-10 top-0 h-screen w-[235px] p-2 pr-6 pt-6 text-dark transition-all duration-200`}>
       <nav className={`py-4 h-fit px-4 flex flex-col justify-start items-start gap-4 transition-all duration-200`}>
             <Link
               onClick={() => setMenuSelected("home")}
@@ -42,20 +31,44 @@ export default function Menu({
         <ul
           className={`relative h-fit w-fit pl-6 flex flex-col justify-start items-start transition-all duration-200`}
         >
-          <li className={`${menuSelected === "works" | pathname.includes("works") ? "selected" : null} menu-link relative text-[1rem] cursor-pointer flex gap-2 items-center uppercase`}
+          <li className={`${menuSelected === "works" ? "selected" : null} menu-link relative text-[1rem] cursor-pointer flex flex-col gap-4 items-start uppercase`}
           >
-          <Link 
-            onClick={() => setMenuSelected("works")}
+          <a 
+            onClick={() => setIsSubMenuOpen(prev => !prev)}
             to="/works"
-            className="inline-block">{t("menuWorks")}</Link>
+            className={`inline-block`}>{t("menuWorks")}
+            <i className={`${subMenuOpen ? "fa-angle-up" : "fa-angle-down"} fa-solid ml-2`}></i></a>
+            <ul className={`${subMenuOpen ? "translate-x-0 opacity-100 z-10" : "opacity-0 z-[-1] translate-x-[-100%]"} absolute top-10 left-2 flex flex-col gap-4 ml-4 transition-all duration-700`}>
+              <li className={`${menuSelected === "design" | pathname === "/works/design" ? "selected" : null} menu-link w-fit`}>
+                <Link 
+                onClick={() => setMenuSelected("design")}
+                to="/works/design"
+                className={`w-fit`}
+                >UI/UX</Link>
+              </li>
+              <li className={`${menuSelected === "photo" | pathname === "/works/photography" ? "selected" : null} menu-link w-fit`}>
+                <Link 
+                onClick={() => setMenuSelected("photo")}
+                to="/works/photography"
+                className={`w-fit`}
+                >Photography</Link>
+              </li>
+              <li className={`${menuSelected === "social" | pathname === "/works/social-media-content-creation" ? "selected" : null} menu-link w-fit mb-4`}>
+                <Link 
+                onClick={() => setMenuSelected("social")}
+                to="/works/social-media-content-creation"
+                className={` w-fit`}
+                >Social Media</Link>
+              </li>
+            </ul>
           </li>
-          <li className={`${menuSelected === "about" | pathname === "/about" ? "selected" : null} menu-link relative text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-200`}>
+          <li className={`${menuSelected === "about" | pathname === "/about" ? "selected" : null} ${subMenuOpen ? "mt-36" : "mt-4"} menu-link mb-4 relative text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-700`}>
             <Link 
               onClick={() => setMenuSelected("about")}
               to="/about" 
-              className="inline-block">{t("menuAbout")}</Link>
+              className="inline-block mt-[1px]">{t("menuAbout")}</Link>
           </li>
-          <li className={`${menuSelected === "contact" | pathname === "/contact" ? "selected" : null} menu-link relative text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-200`}>
+          <li className={`${menuSelected === "contact" | pathname === "/contact" ? "selected" : null} menu-link mb-4 relative text-[1rem] cursor-pointer hover:text-orange uppercase transition-all duration-700`}>
             <Link 
               onClick={() => setMenuSelected("contact")}
               to="/contact"

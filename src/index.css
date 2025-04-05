@@ -5,11 +5,14 @@ body {
   position: relative;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.2rem;
-  color: #1E1E24;
+  color: #193c4b;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   background-color: white;
   overflow-x: hidden;
+}
+body:has(.success-popup[open]) {
+  overflow: hidden;
 }
 
 progress {
@@ -157,11 +160,8 @@ h1 {
   background-color: transparent;
 }
 
-.menu-link {
-  margin-bottom: 1rem;
-}
 .menu-link > a {
-  color: #20063b;
+  color: #193c4b;
   text-decoration: none;
 }
 .menu-link > a::after {

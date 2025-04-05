@@ -27,7 +27,7 @@ export default {
         orange: '#ff5d30',
         'orange-secondary': '#FFBE9D',
         green: '#6EEB83',
-        dark: '#1E1E24',
+        dark: '#193c4b',
       },
       animation: {
         fadeInLeft: 'fadeInLeft 0.5s',
